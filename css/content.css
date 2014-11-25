@@ -1,0 +1,27 @@
+code {
+	font-size: 19px;
+	background: ##f7f7f9;
+	border: 1px solid #e1e1e8;
+	background: aliceblue;
+	padding: 0 0.5%;
+	border-radius: 5px;
+}
+pre code {
+	font-size: 19px;
+	background: ##f7f7f9;
+	border: 1px solid #e1e1e8;
+	display: block;
+	padding: 1%;
+	background: aliceblue;
+	border-radius: 5px;
+}
+body {
+	margin: 2% 18% 2% 18%;
+    padding: 2% 2% 2% 2%;
+	border: 1px solid LightGrey;
+	
+}
+img{
+	display: block;
+	border-radius: 5px;
+}
