@@ -1,4 +1,7 @@
-personal infomation @SkillTree
-==============
+### personal infomation:
+
+  @SkillTree
+  @blog
+  @resume
 
 
