@@ -5,8 +5,6 @@
 * Man
 * homepage: https://whps.github.io/
 
-## E-mail: _doubeable@qq.com_
-
 ## Professional skills
 
 ### C
@@ -60,7 +58,7 @@
 
 ### Amateur
 
-
+## E-mail: _doubeable@qq.com_
 
 ### SNS ID
 #### Mkth
