@@ -1,7 +1,6 @@
 # Resume - WANCHENG DENG
 
 ## Basic Info
-
 * Man
 * homepage : https://whps.github.io/
 
@@ -12,7 +11,7 @@
 #### Blog About C
 
 ### Linux
-#### shell:
+#### Shell:
     Able `grep`, `ps`, `man`, `ssh`, `sed`, `awk`, `job`, `apt-get`
 
 #### Linux & C:
@@ -51,14 +50,13 @@
 * bash
 * gcc, gdb, chrome
 
-
 ### Education
 * 2012-09 - now DaLian University of Technical
 * Software Engineering
 
 ### Amateur
 
-## E-mail: _doubeable@qq.com_
+### E-mail: _doubeable@qq.com_
 
 ### SNS ID
 * Mkth 
