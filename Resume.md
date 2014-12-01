@@ -22,7 +22,7 @@
 #### Linux & Web
 
 ### Python
-    Konw About `PyQt`, `django`, `celery`, `web.py`, `tornado`, `mako`, `jinja2`
+    Konw About `django`, `web.py`, `tornado`
 
 ### Web Front
 * Able `html+ css + javascript` Finish Assign
