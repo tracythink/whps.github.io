@@ -3,4 +3,4 @@
     @ skilltree
     @ blog
     @ resume
-    @ [homepage][http://whps/github.io]
+    @ [homepage](http://whps/github.io)
