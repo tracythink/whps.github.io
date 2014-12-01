@@ -1,5 +1,5 @@
 ####Personal Infomation
-    @ skilltree
-    @ blog
-    @ resume
-    @ [homepage](http://whps/github.io)
+* skilltree
+* blog
+* resume
+* [homepage](http://whps/github.io)
