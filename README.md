@@ -1,5 +1,4 @@
-####Personal Infomation:
-    
+####Personal Infomation
     @ skilltree
     @ blog
     @ resume
