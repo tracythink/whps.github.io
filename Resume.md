@@ -2,7 +2,7 @@
 
 ## Basic Info
 * Man
-* homepage : https://whps.github.io/
+* Homepage : https://whps.github.io/
 
 ## Professional skills
 
