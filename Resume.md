@@ -45,7 +45,7 @@
 * ubuntu, windows
 * vim, vs
 * bash
-* gcc, gdb, chrome
+* gcc, chrome
 
 ### Education
 * 2012-09 - now DaLian University of Technical
