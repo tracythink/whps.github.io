@@ -25,7 +25,6 @@
     Konw About `PyQt`, `django`, `celery`, `web.py`, `tornado`, `mako`, `jinja2`
 
 ### Web Front
-
 * Able `html+ css + javascript` Finish Assign
 * Able `div + css` 
 * Able `ajax`
