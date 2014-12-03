@@ -1,5 +1,4 @@
-/* If you are intrest to me send mail doubtable AT qq.com
- */
+`If you are intrest to me send mail doubtable AT qq.com`
 ``` 
 # { +: doing, ?: undo, !: todo,  $: done, ~: hack, %: vip, ^: strong}
 
