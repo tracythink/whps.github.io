@@ -54,7 +54,7 @@
 ### Amateur
 * Have a great interesting in program-lang-design
 
-### E-mail: _doubeable@qq.com_
+### E-mail: `doubtable@qq.com`
 
 ### SNS ID
 * Mkth 
