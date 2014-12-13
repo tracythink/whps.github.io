@@ -7,7 +7,7 @@
 ## Professional skills
 
 ### C
-#### Tiger Compiler
+#### Tiger: A Compiler implement by C
 #### Blog About C
 
 ### Linux
@@ -22,7 +22,6 @@
 #### Linux & Web
 
 ### Python
-    Konw About `django`, `web.py`, `tornado`
 
 ### Web Front
 * Able `html+ css + javascript` Finish Assign
