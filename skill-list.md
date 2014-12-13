@@ -1,6 +1,7 @@
-`  If you are intrest to me send mail doubtable AT qq.com`
-
-  `{ +: doing, ?: undo, !: todo,  $: done, ~: hack, %: vip, ^: strong}`
+```
+default:
+{+: doing, ?: undo, !: todo,  $: done, ~: hack, %: vip, ^: strong}
+```
 
 ```
 * C++ Template (stop with design-patterns (stop) stoped) (as a progdigm to learn) ?
