@@ -1,60 +1,60 @@
-# Resume - WANCHENG DENG
+### Resume - WANCHENG DENG
 
-## Basic Info
+#### Basic Info
 * Man
 * Homepage : https://whps.github.io/
 
-## Professional skills
+#### Professional skills
 
-### C
-#### Tiger: A Compiler implement by C
-#### Blog About C
+#### C
+##### Tiger: A Compiler implement by C
+##### Blog About C
 
-### Linux
-#### Shell:
+#### Linux
+##### Shell:
     Able `grep`, `ps`, `man`, `ssh`, `sed`, `awk`, `job`, `apt-get`
 
-#### Linux & C:
+##### Linux & C:
     Able `GCC`, `make`
     Able `Makefile`
     Know About `assem`
 
-#### Linux & Web
+##### Linux & Web
 
-### Python
+#### Python
 
-### Web Front
+#### Web Front
 * Able `html+ css + javascript` Finish Assign
 * Able `div + css` 
 * Able `ajax`
 * Able `jQuery`, `bootstrap`
 * Konw About `jQuery Mobile`, `html5`
 
-### Code Style
+#### Code Style
 
-### Language:
+#### Language:
     Best: C
     Able: javascript, python, C++, C#, Scheme
 
-### Verson Control
+#### Verson Control
     Able `git`
     Konw About `svn`
 
-### WorkSpace
+#### WorkSpace
 * ubuntu, windows
 * vim, vs
 * bash
 * gcc, chrome
 
-### Education
+#### Education
 * 2012-09 - now DaLian University of Technical
 * Software Engineering
 
-### Amateur
+#### Amateur
 * Have a great interesting in program-lang-design
 
-### E-mail: mkthpy@163.com
+#### E-mail: mkthpy@163.com
 
-### SNS ID
+#### SNS ID
 * mkth 
 * whps
