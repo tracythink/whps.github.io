@@ -53,8 +53,8 @@
 ### Amateur
 * Have a great interesting in program-lang-design
 
-### E-mail: `doubtable@qq.com`
+### E-mail: mkthpy@163.com
 
 ### SNS ID
-* Mkth 
+* mkth 
 * whps
