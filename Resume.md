@@ -62,12 +62,10 @@ Konw About `svn` (develop web item used)
 <br/>
 
 #### Amateur & My Point {
-
 ```
 * [make them happy] (influence people by my code) --- via stdio.h.
 * I trust math must be the Determinant in coding.
 * Have a great interesting in program-language-design.
 * Interested in Exploring the nature of things so l like sys-lv-dvlp.
 ```
-
 #### }
