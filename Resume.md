@@ -2,8 +2,13 @@
 
 #### Basic Info
 * Man
-* Homepage : https://whps.github.io/
 * Birthday: 06-30-1994
+* Homepage : https://whps.github.io/
+* Blog: https://github.com/whps/whps.github.io/issues
+* E-mail: mkthpy@163.com
+* Tel: 18742518032
+* Education: DaLian University of Technical(Software Engineering)
+* Expectation-Position: System-Level-Develop
 
 #### Professional skills
 
@@ -20,18 +25,15 @@
     Able `Makefile`
     Know About `assem`
 
-##### Linux & Web
-
-#### Python
-
-#### Web Front
-* Able `html+ css + javascript` Finish Assign
-* Able `div + css` 
-* Able `ajax`
-* Able `jQuery`, `bootstrap`
-* Konw About `jQuery Mobile`, `html5`
+##### Used Web
 
 #### Code Style
+
+#### WorkSpace
+* ubuntu, windows
+* vim, vs
+* bash
+* gcc, chrome
 
 #### Language (sorted by good-at):
     Best: C
@@ -41,17 +43,6 @@
     Able `git`
     Konw About `svn`
 
-#### WorkSpace
-* ubuntu, windows
-* vim, vs
-* bash
-* gcc, chrome
-
-#### Education
-* 2012-09 - now DaLian University of Technical
-* Software Engineering
-
 #### Amateur & My Point
 * Have a great interesting in program-lang-design
 
-#### E-mail: mkthpy@163.com
