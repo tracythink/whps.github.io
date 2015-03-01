@@ -10,11 +10,10 @@
 * Education: DaLian University of Technical(Software Engineering)
 * Expectation-Position: System-Level-Develop
 
-#### Professional skills
+### Professional skills
 
 #### C
 ##### Tiger: A Compiler implement by C
-##### Blog About C
 
 #### Linux
 ##### Shell:
@@ -43,6 +42,6 @@
     Able `git`
     Konw About `svn`
 
-#### Amateur & My Point
+### Amateur & My Point
 * Have a great interesting in program-lang-design
 
