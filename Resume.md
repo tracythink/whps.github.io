@@ -3,7 +3,7 @@
 
 <br/>
 
-##### Basic Info
+#### Basic Info {
 * Man
 * Birthday: 06-30-1994
 * [Homepage](https://whps.github.io)
@@ -13,7 +13,7 @@
 * Education: DaLian University of Technical --- Software Engineering
 * Expectation-Position: System-Level-Develop
 
-<hr/>
+#### }
 <br/>
 
 #### SKILLS {
