@@ -8,7 +8,7 @@
 * [Blog](https://github.com/whps/whps.github.io/issues)
 * E-mail: mkthpy@163.com
 * Tel: 18742518032
-* Education: DaLian University of Technical(Software Engineering)
+* Education: DaLian University of Technical --- Software Engineering
 * Expectation-Position: System-Level-Develop
 
 <hr/>
