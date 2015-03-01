@@ -51,15 +51,15 @@
 ##### Coding Language (sorted by good-at):
 ```
 Best: C
-Able: Scheme(sicp-answer-code & lisp interpretation), 
-      C#(a simple lite-sql implement)
-      PHP(do many web items in before grade-3, also front-web)
+Able: Scheme (sicp-answer-code & lisp interpretation), 
+      C# (a simple lite-sql implement)
+      PHP (do many web items in before grade-3, also front-web)
 ```
 
 ##### Verson Control
 ```
-Able `git` (personal items used)
-Konw About `svn` (develop web item used)
+Able git (personal items used)
+Konw About svn (develop web item used)
 ```
 
 #### }
