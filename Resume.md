@@ -1,8 +1,9 @@
-### Resume - WANCHENG DENG
+### RESUME OF WANCHENG DENG
 
 #### Basic Info
 * Man
 * Homepage : https://whps.github.io/
+* Birthday: 06-30-1994
 
 #### Professional skills
 
@@ -32,9 +33,9 @@
 
 #### Code Style
 
-#### Language:
+#### Language (sorted by good-at):
     Best: C
-    Able: javascript, python, C++, C#, Scheme
+    Able: Scheme, python, javascript, C#, C++
 
 #### Verson Control
     Able `git`
@@ -50,11 +51,7 @@
 * 2012-09 - now DaLian University of Technical
 * Software Engineering
 
-#### Amateur
+#### Amateur & My Point
 * Have a great interesting in program-lang-design
 
 #### E-mail: mkthpy@163.com
-
-#### SNS ID
-* mkth 
-* whps
