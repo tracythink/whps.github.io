@@ -12,7 +12,6 @@
 * Tel: 18742518032
 * Education: DaLian University of Technical --- Software Engineering
 * Expectation-Position: System-Level-Develop
-
 #### }
 <br/>
 
