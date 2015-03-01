@@ -11,35 +11,34 @@
 * Expectation-Position: System-Level-Develop
 
 <hr/>
-#### Professional skills
+#### Skills Tree
 <hr/>
 
 ##### C Language
 ```
-* Tiger: A Compiler implement by C
+* Tiger: 
+  A Compiler implement by C
+  
+* Able assem code 
+  (konw some assme konwledge)
+* Read many deeply-understand boosk of C 
+  (POINTERS ON C, C Traps and Pitfalls, Expert C Programming)
+* Konw OS and C code relationship 
+  (compile, link and load)
+  (read The Programmer's Self Cultivation)
 ```
 
 ##### Linux
 ```
-* basic shell command (grep, ps, man, ssh, job, etc)
-* read part of Linux surce-code (0.11) 
+* basic shell command (grep, ps, man, ssh, job, gcc, make, etc)
+* read part of Linux surce-code (0.11)
 ```
-
-###### Linux & C:
-    Able `GCC`, `make`
-    Able `Makefile`
-    Know About `assem`
-
-###### Used Web
-
-##### Code Style
 
 ##### WorkSpace
 ```
-* ubuntu, windows
-* vim, vs
+* ubuntu, windows7
+* vim, vs, sublime, etc
 * bash
-* gcc, chrome
 ```
 
 ##### Coding Language (sorted by good-at):
@@ -47,7 +46,7 @@
 Best: C
 Able: Scheme(sicp-answer-code & lisp interpretation), 
       C#(a simple lite-sql implement)
-      PHP(do many web items in before gd3, also front-web)
+      PHP(do many web items in before grade-3, also front-web)
 ```
 
 ##### Verson Control
@@ -56,8 +55,10 @@ Able `git` (personal items used)
 Konw About `svn` (develop web item used)
 ```
 
-<hr/>
 ##### Amateur & My Point
 ```
-* Have a great interesting in program-lang-design
+* [make them happy] (influence people by my code) --- via stdio.h.
+* I trust math must be the Determinant in coding.
+* Have a great interesting in program-language-design.
+* Interested in Exploring the nature of things so l like sys-lv-dvlp.
 ```
