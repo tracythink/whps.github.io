@@ -16,8 +16,7 @@
 <hr/>
 <br/>
 
-#### SKILLS >>>
-<br/>
+#### SKILLS {
 
 ##### C Language
 ```
@@ -59,11 +58,15 @@ Able: Scheme(sicp-answer-code & lisp interpretation),
 Able `git` (personal items used)
 Konw About `svn` (develop web item used)
 ```
+#### }
 
-##### Amateur & My Point
+#### Amateur & My Point {
+
 ```
 * [make them happy] (influence people by my code) --- via stdio.h.
 * I trust math must be the Determinant in coding.
 * Have a great interesting in program-language-design.
 * Interested in Exploring the nature of things so l like sys-lv-dvlp.
 ```
+
+#### }
