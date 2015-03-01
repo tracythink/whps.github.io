@@ -1,5 +1,5 @@
 ### RESUME OF WANCHENG DENG
-
+<hr/>
 #### Basic Info
 * Man
 * Birthday: 06-30-1994
@@ -9,7 +9,7 @@
 * Tel: 18742518032
 * Education: DaLian University of Technical(Software Engineering)
 * Expectation-Position: System-Level-Develop
-
+<hr/>
 ### Professional skills
 
 #### C Language
@@ -43,7 +43,7 @@
 #### Verson Control
     Able `git`
     Konw About `svn`
-
+<hr/>
 ### Amateur & My Point
 * Have a great interesting in program-lang-design
 
