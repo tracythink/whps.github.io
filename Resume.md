@@ -21,7 +21,7 @@
 ```
 * Tiger: 
   A Compiler implement by C
-  
+  (read Modern Compiler Implement in C)
 * Able assem code 
   (konw some assme konwledge)
 * Read many deeply-understand boosk of C 
@@ -33,8 +33,12 @@
 
 ##### Linux
 ```
-* basic shell command (grep, ps, man, ssh, job, gcc, make, etc)
+* basic shell command 
+  (grep, ps, man, ssh, job, gcc, make, etc)
+  (also know how to combine them to use)
 * read part of Linux surce-code (0.11)
+  (know OS knowledge how to apply in Linux)
+  (memory-cache, process-schedule, protect-model, memory-manage, etc)
 ```
 
 ##### WorkSpace
