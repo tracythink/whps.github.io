@@ -3,7 +3,7 @@
 
 <br/>
 
-#### Basic Info {
+#### BASIC INFO {
 * Man
 * Birthday: 06-30-1994
 * [Homepage](https://whps.github.io)
@@ -38,7 +38,7 @@
   (also know how to combine them to use)
 * read part of Linux surce-code (0.11)
   (know OS knowledge how to apply in Linux)
-  (memory-cache, process-schedule, protect-model, memory-manage, etc)
+  (memory-cache, process-schedule, protect-mode, memory-manage, etc)
 ```
 
 ##### WorkSpace
@@ -65,7 +65,7 @@ Konw About `svn` (develop web item used)
 #### }
 <br/>
 
-#### Amateur & My Point {
+#### AMATEUR & POINT {
 ```
 * [make them happy] (influence people by my code) --- via stdio.h.
 * I trust math must be the Determinant in coding.
