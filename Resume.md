@@ -1,6 +1,6 @@
-### RESUME OF WANCHENG DENG
+#### RESUME OF WANCHENG DENG
 <hr/>
-#### Basic Info
+##### Basic Info
 * Man
 * Birthday: 06-30-1994
 * [Homepage](https://whps.github.io)
@@ -11,40 +11,53 @@
 * Expectation-Position: System-Level-Develop
 
 <hr/>
-### Professional skills
+#### Professional skills
+<hr/>
 
-#### C Language
+##### C Language
 ```
 * Tiger: A Compiler implement by C
 ```
 
-#### Linux
-##### Shell:
-    Able `grep`, `ps`, `man`, `ssh`, `sed`, `awk`, `job`, `apt-get`
+##### Linux
+```
+* basic shell command (grep, ps, man, ssh, job, etc)
+* read part of Linux surce-code (0.11) 
+```
 
-##### Linux & C:
+###### Linux & C:
     Able `GCC`, `make`
     Able `Makefile`
     Know About `assem`
 
-##### Used Web
+###### Used Web
 
-#### Code Style
+##### Code Style
 
-#### WorkSpace
+##### WorkSpace
+```
 * ubuntu, windows
 * vim, vs
 * bash
 * gcc, chrome
+```
 
-#### Language (sorted by good-at):
-    Best: C
-    Able: Scheme, python, javascript, C#, C++
+##### Coding Language (sorted by good-at):
+```
+Best: C
+Able: Scheme(sicp-answer-code & lisp interpretation), 
+      C#(a simple lite-sql implement)
+      PHP(do many web items in before gd3, also front-web)
+```
 
-#### Verson Control
-    Able `git`
-    Konw About `svn`
+##### Verson Control
+```
+Able `git` (personal items used)
+Konw About `svn` (develop web item used)
+```
+
 <hr/>
-### Amateur & My Point
+##### Amateur & My Point
+```
 * Have a great interesting in program-lang-design
-
+```
