@@ -8,6 +8,7 @@
 * Birthday: 06-30-1994
 * [Homepage](https://whps.github.io)
 * [Blog](https://github.com/whps/whps.github.io/issues)
+* [Github](https://github.com/whps)
 * E-mail: mkthpy@163.com
 * Tel: 18742518032
 * Education: DaLian University of Technical --- Software Engineering
@@ -41,7 +42,7 @@
   (memory-cache, process-schedule, protect-mode, memory-manage, etc)
 ```
 
-##### WorkSpace
+##### Workspace
 ```
 * ubuntu, windows7
 * vim, vs, sublime, etc
