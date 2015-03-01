@@ -1,6 +1,6 @@
 #### RESUME OF WANCHENG DENG
-<br/>
 <hr/>
+<br/>
 ##### Basic Info
 * Man
 * Birthday: 06-30-1994
