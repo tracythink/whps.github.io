@@ -1,4 +1,5 @@
 #### RESUME OF WANCHENG DENG
+> make them happy, why pass ?
 <hr/>
 <br/>
 ##### Basic Info
@@ -14,7 +15,7 @@
 <hr/>
 <br/>
 
-#### Skills Tree
+#### SKILLS
 <br/>
 
 ##### C Language
