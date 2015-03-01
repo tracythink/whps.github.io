@@ -1,7 +1,8 @@
 #### RESUME OF WANCHENG DENG
 > make them happy, why pass ?
-<hr/>
+
 <br/>
+
 ##### Basic Info
 * Man
 * Birthday: 06-30-1994
