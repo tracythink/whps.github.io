@@ -12,8 +12,10 @@
 
 ### Professional skills
 
-#### C
-##### Tiger: A Compiler implement by C
+#### C Language
+```
+* Tiger: A Compiler implement by C
+```
 
 #### Linux
 ##### Shell:
