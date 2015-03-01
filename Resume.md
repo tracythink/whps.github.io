@@ -12,11 +12,11 @@
 * Tel: 18742518032
 * Education: DaLian University of Technical --- Software Engineering
 * Expectation-Position: System-Level-Develop
+
 #### }
 <br/>
 
 #### SKILLS {
-
 ##### C Language
 ```
 * Tiger: 
@@ -57,6 +57,7 @@ Able: Scheme(sicp-answer-code & lisp interpretation),
 Able `git` (personal items used)
 Konw About `svn` (develop web item used)
 ```
+
 #### }
 <br/>
 
