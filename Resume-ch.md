@@ -36,7 +36,7 @@
 
 * 大三寒假阅读了<Linux0.11内核完全注释>，对系统的运作，各部分之间的运作机理，内存管理等理解更加深刻。(这件事让我注意到，其实难的东西不是写代码，是对事物的理解能力)
 
-* 现正啃[SICP](https://github.com/whps/whps.github.io/tree/master/stuff/tiny-item/Interpret)，简易解释器和编译器，初次接触函数式编程，学到了新的编程思想和技巧。(以上让我认识到知识是无限的，must keep studying)
+* 现正啃[SICP](https://github.com/whps/whps.github.io/tree/master/stuff/tiny-item/Interpret)，简易解释器和编译器，初次接触函数式编程，学到了新的编程思想和技巧，以及抽象和建模能力。(以上让我认识到知识是无限的，must keep studying)
 
 
 #### 语言(按熟悉程度排行)
