@@ -38,7 +38,8 @@
 
 * 现正啃[SICP](https://github.com/whps/whps.github.io/tree/master/stuff/tiny-item/Interpret)，简易解释器和编译器，初次接触函数式编程，学到了新的编程思想和技巧，以及抽象和建模能力。(以上让我认识到知识是无限的，must keep studying)
 
-
+* 以上代码均为自己独立完成，独立调试，享受编码的过程与乐趣。
+ 
 #### 语言(按熟悉程度排行)
 1 => `C` / `Scheme`
 
