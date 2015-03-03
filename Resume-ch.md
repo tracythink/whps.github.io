@@ -17,5 +17,5 @@
   1. 家教系统(双向交互，找家教和家教)
   2. 公司门户网站(带后台管理系统，前后台自己独立完成)。
   3. [这里](https://github.com/whps/whps.github.io/tree/master/stuff/tiny-item/fshare)是一个小型的php项目，实现百度云的基本功能:[秒传]。
-  4. 写过一个微信和wordpress交互的插件，wordpress推送给微信，微信用户使用命令交互。[这里]()
+  4. 写过一个微信和wordpress交互的[插件]()，wordpress推送给微信，微信用户使用命令交互。
 
