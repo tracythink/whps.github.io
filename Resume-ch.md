@@ -61,7 +61,14 @@
 正则和字符串处理函数处理sql语句，直接分析出动作，无AST，支持功能: use, create, insert, select, delete, update, 通配符 `*`, 单条件where, 文件恢复数据库。不足之处很多：字符集，null，默认第一列主键等等。
 
 * [Tiger](https://github.com/whps/Tiger) C语言实现的编译型语言，实现了：简单的类型系统，高阶函数，平凡作用域，
-结构体数据结构， 
+结构体数据结构，常用函数库。前端lex+yacc,实现了AST，中间代码(更抽象的AST)，基本快和路径，指令生产。可以编译到
+汇编，具体[总结](https://github.com/whps/whps.github.io/issues/5)。
+
+* [Lisp Interpretation & 编译器](https://github.com/whps/whps.github.io/tree/master/stuff/tiny-item/Interpret)实现了
+lazy-evaluation, Stream。(未完接近结束)
+
+#### 期望工作 & 未来
+* 希望成为一名 `System-Level-Developer` ，接下来会继续学习系统知识，主要范围`操作系统+编译原理+运行库`
  
 #### 关于
 * 有信心，有毅力，为热爱编程的人自豪。
