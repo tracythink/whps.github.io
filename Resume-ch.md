@@ -65,7 +65,7 @@
 结构体数据结构，常用函数库。前端lex+yacc，实现了AST，中间代码(更抽象的AST)，基本快和路径，指令生产。可以编译到
 汇编，具体[总结](https://github.com/whps/whps.github.io/issues/5)。
 
-* [Lisp Interpretation & 编译器](https://github.com/whps/whps.github.io/tree/master/stuff/tiny-item/Interpret)实现了
+* [Lisp Interpretation & Compiler](https://github.com/whps/whps.github.io/tree/master/stuff/tiny-item/Interpret)实现了
 lazy-evaluation, Stream。(未完接近结束)
 
 #### 期望工作 & 未来
