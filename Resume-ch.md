@@ -26,7 +26,7 @@
  1. `家教系统(双向交互，找家教和家教)。`  
  2. `公司门户网站(带后台管理系统，前后台自己独立完成)。`
  3. [这里](https://github.com/whps/whps.github.io/tree/master/stuff/tiny-item/fshare)`是一个小型php项目，实现百度云基本功能:[秒传]。`
- 4. `写过一个微信和wordpress交互的`[插件]()`，wordpress推送给微信，微信用户使用命令交互。(赚了第一笔外快)`
+ 4. `写过一个微信和wordpress交互的`[插件](https://github.com/whps/whps.github.io/tree/master/stuff/tiny-item/wxiwp)`，wordpress推送给微信，微信用户使用命令交互。(赚了第一笔外快)`
 
 * 大二暑假写了一个`C#`大作业，简易数据库的实现[minsql](https://github.com/whps/whps.github.io/tree/master/stuff/tiny-item/minsql)。由于当时没有考虑编译，对于sql语句的处理用麻烦的字符串处理和正则，后来学了编译我发现自己的方法是笨拙的，不过实现的过程很顺利，用了一周。大约1000行。(这件事让我认识到正确的方法大于一切，好的轮子让人开心)
 
@@ -55,7 +55,7 @@
 * git / svn
 
 #### 项目
-* [wxiwp]() 大连云间牧场公司web项目，微信和wordpress 交互的插件。可传输博客文章，图像，并且对于用户有记忆功能，
+* [wxiwp](https://github.com/whps/whps.github.io/tree/master/stuff/tiny-item/wxiwp) 大连云间牧场公司web项目，微信和wordpress 交互的插件。可传输博客文章，图像，并且对于用户有记忆功能，
 可推送用户指定文章，搜索，最新，最热等，需要用户手动键入命令。
 
 * [minsql](https://github.com/whps/whps.github.io/tree/master/stuff/tiny-item/minsql) C#实现的小型数据库，前端用
