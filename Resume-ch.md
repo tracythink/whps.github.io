@@ -41,9 +41,10 @@
  
  
 #### 开发环境
-* ubuntu, windows
-* vi, sublime, VS, bash
-* gcc, gdb, chrome
+* ubuntu / windows
+* vi / sublime / VS / bash
+* gcc / chrome
+* git / svn
  
 
 
