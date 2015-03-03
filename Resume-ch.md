@@ -23,10 +23,10 @@
   (这一时期产生了对编程的兴趣)
 
 * 大二上学习后端用`php`开发了大量的web项目：(这段时间熟悉了sql，网络交互，编程对我来说已经是一件快乐的事)
- 1. `家教系统(双向交互，找家教和家教)。`  
- 2. `公司门户网站(带后台管理系统，前后台自己独立完成)。`
- 3. [这里](https://github.com/whps/whps.github.io/tree/master/stuff/tiny-item/fshare)`是一个小型php项目，实现百度云基本功能:[秒传]。`
- 4. `写过一个微信和wordpress交互的`[插件](https://github.com/whps/whps.github.io/tree/master/stuff/tiny-item/wxiwp)`，wordpress推送给微信，微信用户使用命令交互。(赚了第一笔外快)`
+ 1. 家教系统(双向交互，找家教和家教)。 
+ 2. 公司门户网站(带后台管理系统，前后台自己独立完成)。
+ 3. [这里](https://github.com/whps/whps.github.io/tree/master/stuff/tiny-item/fshare)是一个小型php项目，实现百度云基本功能:[秒传]。
+ 4. 写过一个微信和wordpress交互的[插件](https://github.com/whps/whps.github.io/tree/master/stuff/tiny-item/wxiwp)，wordpress推送给微信，微信用户使用命令交互。(赚了第一笔外快)
 
 * 大二暑假写了一个`C#`大作业，简易数据库的实现[minsql](https://github.com/whps/whps.github.io/tree/master/stuff/tiny-item/minsql)。由于当时没有考虑编译，对于sql语句的处理用麻烦的字符串处理和正则，后来学了编译我发现自己的方法是笨拙的，不过实现的过程很顺利，用了一周。大约1000行。(这件事让我认识到正确的方法大于一切，好的轮子让人开心)
 
