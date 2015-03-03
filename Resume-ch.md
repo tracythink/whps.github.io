@@ -12,7 +12,8 @@
 * 教育经历: 大连理工大学 [软件工程] {数字媒体系} (2012-2015)
 
 #### 技术经历
-* 大一初学web前端，能用`js`+`css`+`html`开发，写过很漂亮的网页，具有较好审美和色彩搭配水平(这一时期产生了对编程的兴趣)
+* 大一初学web前端，能用`js`+`css`+`html`开发，写过很漂亮的网页，具有较好审美和色彩搭配水平
+  (这一时期产生了对编程的兴趣)
 * 大二上学习后端用`php`开发了大量的web项目：(这段时间熟悉了sql，网络交互，编程对我来说已经是一件快乐的事)
  1. `家教系统(双向交互，找家教和家教)。`  
  2. `公司门户网站(带后台管理系统，前后台自己独立完成)。`
@@ -25,14 +26,15 @@
 * 现正啃[SICP](https://github.com/whps/whps.github.io/tree/master/stuff/tiny-item/Interpret)，简易解释器和编译器，初次接触函数式编程，学到了新的编程思想和技巧。(以上让我认识到知识是无限的，must keep studying)
 
 #### 语言(按熟悉程度排行)
- 1=> `C` / `Scheme`
- 2=> `PHP` / `C#` / `Assembly`
- 3=> `javascript` / `python` 
+ 1 => `C` / `Scheme`
+ 2 => `PHP` / `C#` / `Assembly`
+ 3 => `javascript` / `python`
+ 
  
  #### 开发环境
- ubuntu, windows
- vi, sublime, VS, bash
- gcc, gdb, chrome
+ * ubuntu, windows
+ * vi, sublime, VS, bash
+ * gcc, gdb, chrome
  
 
 
