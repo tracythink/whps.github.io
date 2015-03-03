@@ -18,6 +18,8 @@
 
 * 教育经历: 大连理工大学 [软件工程] {数字媒体系} (2012-2015)
 
+<hr>
+
 #### 技术经历
 * 大一初学web前端，能用`js`+`css`+`html`开发，写过很漂亮的网页，具有较好审美和色彩搭配水平
   (这一时期产生了对编程的兴趣)
@@ -39,6 +41,8 @@
 * 现正啃[SICP](https://github.com/whps/whps.github.io/tree/master/stuff/tiny-item/Interpret)，简易解释器和编译器，初次接触函数式编程，学到了新的编程思想和技巧，以及抽象和建模能力。(以上让我认识到知识是无限的，must keep studying)
 
 * 以上代码均为自己独立完成，独立调试，享受编码的过程与乐趣。
+
+<hr>
  
 #### 语言(按熟悉程度排行)
 1 => `C` / `Scheme`
@@ -54,6 +58,8 @@
 * gcc / chrome
 * git / svn
 
+<hr>
+
 #### 项目
 * [wxiwp](https://github.com/whps/whps.github.io/tree/master/stuff/tiny-item/wxiwp) 大连云间牧场公司web项目，微信和wordpress 交互的插件。可传输博客文章，图像，并且对于用户有记忆功能，
 可推送用户指定文章，搜索，最新，最热等，需要用户手动键入命令。
@@ -67,6 +73,8 @@
 * [Lisp Interpretation & Compiler](https://github.com/whps/whps.github.io/tree/master/stuff/tiny-item/Interpret)实现了
 lazy-evaluation, Stream。(未完接近结束)
 
+<hr>
+
 #### 期望工作 & 未来
 * 希望成为一名 `System-Level-Developer` ，接下来会继续学习新的知识壮大自己，主要范围`操作系统+编译原理+数学`
  
@@ -78,6 +86,7 @@ lazy-evaluation, Stream。(未完接近结束)
 * 大学的成绩并不好，没有认真对待，否则我会更加优秀，不过我十分清楚自己喜欢什么！
 * 业余喜欢音乐和电影，积极学习中。
 
+<hr>
 
 
 
