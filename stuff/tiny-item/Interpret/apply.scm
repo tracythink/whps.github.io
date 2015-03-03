@@ -9,3 +9,27 @@
   (cond ((last? exps) (eval (first exps) env))
         (else (eval (first exps) env)
               (seq.e (rest exps) env))))
+
+(define (actual-value expr env) 
+  (_force (eval expr env)))
+
+;;; the `apply` of lazy-eval version
+(define (__apply proc args env)
+  (cond ((primitive-proc? proc) 
+         (primitive.a  proc (_vals-list args env))) ;changed,actual-value HERE :)
+        ((compound-proc? proc)
+         (seq.e (proc-body proc)
+                (env.extend (proc-paras proc)
+                            (_vals-delayed args env)
+                            (proc-env proc))))
+        (else (error "apply---Unknow procedure type" ""))))
+
+(define (_vals-list exps env)
+  (if (no? exps) '()
+      (cons (actual-value (first exps) env)
+            (_vals-list (rest exps) env))))
+
+(define (_vals-delayed exps env)
+  (if (no? exps) '()
+      (cons (_delay (first exps) env)
+            (_vals-delayed (rest exps) env))))

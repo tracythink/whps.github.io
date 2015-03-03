@@ -1,4 +1,25 @@
 
+(define (_force obj)
+  (cond  ((thunk? obj)
+          (let ((_r (actual-value (thunk-exp obj) (thunk-env obj))))
+            (set-car! obj EVALED)
+            (set-car! (cdr obj) _r)
+            (set-cdr! (cdr obj) '())
+            _r))
+         ((evaled? obj) (thunk-val obj))
+         (else obj)))
+                        
+                        
+(define (_delay expr env)
+  (list THUNK expr env))
+
+(define (thunk? obj) (tag? obj THUNK))
+(define (thunk-exp t) (cadr t))
+(define (thunk-env t) (caddr t))
+
+(define (evaled? obj) (tag? obj EVALED))
+(define (thunk-val th) (cadr th))
+
 (define (_eval expr env)
   (cond ((self-evaluating? expr) expr)
         ((var? expr) (lookup expr env))
@@ -10,12 +31,12 @@
         ((begin? expr) (seq.e (beg-actions expr) env))
         ((cond? expr) (_eval (cond2if expr) env))
         ((let? expr) (_eval (let2lam expr) env)) 
-        ((apply? expr) (_apply (_eval (operator expr) env) ;;; low effect
-                               (vals-list (operands expr) env)))
+        ((apply? expr) (__apply (actual-value (operator expr) env)
+                                (operands expr)
+                                env))
         (else (error "_eval---Unknown Expression Type!" ""))))
 
 (define eval _eval) ;;; no sperate semant and real-eval, low effect
-; (define eval  (λ (expr env) ((analyze expr) env)))
 
 (define (vals-list exps env)
   (if (no? exps) '()
@@ -23,7 +44,7 @@
 	    (vals-list (rest exps) env))))
 
 (define (if.e expr env)
-  (if (true? (eval (if-predicate expr) env))
+  (if (true? (actual-value (if-predicate expr) env))
       (eval (if-consequent expr) env)
       (eval (if-alternative expr) env)))
 

@@ -3,6 +3,8 @@
         (list 'cdr cdr)
         (list 'cons cons)
         (list 'null? null?)
+        (list '+ +)
+        (list '/ /)
         ; if need, add here
         ))
 
@@ -46,4 +48,3 @@
                      (proc-body obj)
                      '<procedure-env>))
       (display obj)))
-

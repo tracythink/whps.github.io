@@ -11,3 +11,5 @@
 (define COND_ELSE_TAG 'else)
 (define LET_TAG 'let)
 (define UNASSIGN 'unassign)
+(define THUNK 'thunk)
+(define EVALED 'evaled)
