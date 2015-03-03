@@ -57,7 +57,7 @@
 * 有信心，有毅力，为热爱编程的人自豪。
 * 对于探求事物的本质十分感兴趣，追求知其所以然。
 * 我相信数学肯定是编程高手的法宝，即使我数学不好。
-* [make them happy] (influence people by my code) --- `via stdio.h`.
+* make them happy (influence people by my code) --- `via stdio.h`.
 * 大学的成绩并不好，没有认真对待，否则我会更加优秀，不过我十分清楚自己喜欢什么！
 * 业余喜欢音乐和电影，积极学习中。
 
