@@ -56,7 +56,12 @@
 #### 项目
 * [wxiwp]() 大连云间牧场公司web项目，微信和wordpress 交互的插件。可传输博客文章，图像，并且对于用户有记忆功能，
 可推送用户指定文章，搜索，最新，最热等，需要用户手动键入命令。
-* []
+
+* [minsql](https://github.com/whps/whps.github.io/tree/master/stuff/tiny-item/minsql) C#实现的小型数据库，前端用
+正则和字符串处理函数处理sql语句，直接分析出动作，无AST，支持功能: use, create, insert, select, delete, update, 通配符 `*`, 单条件where, 文件恢复数据库。不足之处很多：字符集，null，默认第一列主键等等。
+
+* [Tiger](https://github.com/whps/Tiger) C语言实现的编译型语言，实现了：简单的类型系统，高阶函数，平凡作用域，
+结构体数据结构， 
  
 #### 关于
 * 有信心，有毅力，为热爱编程的人自豪。
