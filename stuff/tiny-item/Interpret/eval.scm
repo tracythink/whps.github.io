@@ -14,8 +14,8 @@
                                (vals-list (operands expr) env)))
         (else (error "_eval---Unknown Expression Type!" ""))))
 
-(define eval _eval) ;;; no sperate semant and real-eval, low effect
-; (define eval  (λ (expr env) ((analyze expr) env)))
+; (define eval _eval) ;;; no sperate semant and real-eval, low effect
+(define eval  (λ (expr env) ((analyze expr) env)))
 
 (define (vals-list exps env)
   (if (no? exps) '()

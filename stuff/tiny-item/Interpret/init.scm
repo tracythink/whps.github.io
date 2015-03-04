@@ -1,11 +1,11 @@
-(define (cons x y) (lambda (m) (m x y)))
-(define (car z) (z (lambda (p q) p)))
-(define (cdr z) (z (lambda (p q) q)))
+(define _cons (lambda (x y)  (lambda (m) (m x y))))
+(define _car (lambda (z) (z (lambda (p q) p))))
+(define _cdr (lambda (z) (z (lambda (p q) q))))
 
 (define PRIMITIVE_PROCS
-  (list (list 'car car)
-        (list 'cdr cdr)
-        (list 'cons cons)
+  (list (list 'car _car)
+        (list 'cdr _cdr)
+        (list 'cons _cons)
         (list 'null? null?)
         (list '+ +)
         (list '/ /)
