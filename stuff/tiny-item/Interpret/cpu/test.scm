@@ -1,7 +1,8 @@
 #lang scheme
 
+(require r5rs)
 ; (require rnrs/base-6)
-(require rnrs/mutable-pairs-6)
+; (require rnrs/mutable-pairs-6)
 
 
 (include "settings.scm")
@@ -23,19 +24,38 @@
     dispatch))
 
 (define (get-content reg) (reg GET))
-(define (set-content reg) (reg SET))
+(define (set-content reg val) ((reg SET) val))
 
 (define (Stack)
-  (let ((s '()))
-    (define (push x) (set! s (cons x s)))
+  (let ((s '())
+        (pushes 0)
+        (maxdepth 0)
+        (curdepth 0))
+    (define (push x) 
+      (set! s (cons x s))
+      (set! pushes (+ 1 pushes))
+      (set! curdepth (+ 1 curdepth))
+      (set! maxdepth (+ curdepth maxdepth)))
     (define (pop)
       (if (null? s) (error "Stack.pop---Empty stack!")
-	  (let ((top (car s))) (set! s (cdr s)) top)))
-    (define (init) (set! s '()))
+          (let ((top (car s))) 
+            (set! s (cdr s))
+            (set! curdepth (- curdepth 1)) 
+            top)))
+    (define (init) 
+      (set! s '())
+      (set! pushes 0)
+      (set! curdepth 0)
+      (set! maxdepth 0))
+    (define (sprint)
+      (newline)
+      (display (list 'pushes '= pushes
+                     'maxdepth '= maxdepth)))
     (define (dispatch msg)
       (cond ((eq? msg PUSH) push)
             ((eq? msg POP) (pop))
             ((eq? msg INIT) (init))
+            ((eq? msg PRINT) (sprint))
             (else (error "Stack---Unknown request!"))))
     dispatch))
 
@@ -45,7 +65,7 @@
 
 (define (start m) (m START))
 (define (get-reg-content m regname) (get-content (getreg m regname)))
-(define (set-reg-content m regname) (set-content (getreg m regname)))
+(define (set-reg-content m regname val) (set-content (getreg m regname) val))
 
 (define (getreg m regname) ((m GETREG) regname))
 
@@ -54,7 +74,8 @@
         (flag (Register FLAG))
         (stack (Stack)) 
         (instrq '()))
-    (let ((ops (list (list INITSTACK (lambda () (stack INIT)))))
+    (let ((ops (list (list INITSTACK (lambda () (stack INIT)))
+                     (list PRINTSTACK (lambda () (stack PRINT)))))
           (regs (list (list PC pc) (list FLAG flag))))
       (define (allocreg name)
         (if (assoc name '((1 2))) (error "Multiply defined register: " name)
@@ -64,8 +85,8 @@
           (if val (cadr val) (error "Unkonwn register: " name))))
       (define (exec)
         (let ((instr (get-content pc)))
-          (if (null? instr) 'done
-              (begin ((doexec (car instr))) (exec)))))
+          (if (null? instr) 'instructions-execute-done
+              (begin ((doexec (car instr))) (stack PRINT) (exec)))))
       (define (dispatch msg)
         (cond ((eq? msg START) (set-content pc instrq) (exec))
               ((eq? msg INSTALL-INQ) (lambda (seq) (set! instrq seq)))
@@ -99,7 +120,7 @@
 (define (update instrs  labs m)
   (let ((pc (getreg m PC))
         (flag (getreg m FLAG))
-        (stack (getreg m STACK))
+        (stack (m STACK))
         (ops (m OPERATIONS)))
     (define (f i) 
       (setinstr i (Exec (instr-text i) labs m pc flag stack ops)))
@@ -117,7 +138,7 @@
 
 (define (Exec i labs m pc flag stack ops)
   (cond ((eq? (car i) ASSIGN) (Assign i m labs ops pc))
-        ((eq? (car i) TEST) (Test i m labs ops pc))
+        ((eq? (car i) TEST) (Test i m labs ops flag pc))
         ((eq? (car i) BRANCH) (Branch i m labs flag pc))
         ((eq? (car i) GOTO) (Goto i m labs pc))
         ((eq? (car i) SAVE) (Save i m stack pc))
@@ -153,7 +174,7 @@
 (define (Goto i m labs pc)
   (let ((dest (cadr i)))
     (cond ((label? dest)
-           (let ((instr (lookuplabel labs dest)))
+           (let ((instr (lookuplabel labs (cadr dest))))
              (lambda () (set-content pc instr))))
           ((reg? dest) 
            (let ((reg (getreg m (cadr dest))))
@@ -187,9 +208,9 @@
 (define (label? i) (tag? i LABEL))
 
 (define (Op i m labs ops)
-  (let ((op (lookupprim (cadr i) ops))
+  (let ((op (lookupprim (cadr (car i)) ops))
         (argprocs (map (lambda (e) (Primitive e m labs)) (cdr i))))
-    (lambda () (apply op (map (lambda (p) (p))) argprocs))))
+    (lambda () (apply op (map (lambda (p) (p)) argprocs) ))))
 
 (define (lookupprim symbol ops)
   (let ((val (assoc symbol ops)))
@@ -197,17 +218,18 @@
 
 (define (op? i) (and (pair? i) (tag? (car i) OP)))
 
-
-(define gcd-machine
-  (Machine '(a b t)
-           (list (list 'rem remainder) (list '= =))
-           '(test-b
-               (test (op =) (reg b) (reg a))
-               (branch (label done))
+(define text '(test-b
+               (test (op =) (reg b) (const 0))
+               (branch (label donehappy))
                (assign t (op rem) (reg a) (reg b))
                (assign a (reg b))
                (assign b (reg t))
                (goto (label test-b))
-             done)))
+             donehappy))
+(define __ops (list (list 'rem remainder) (list '= =)))
+(define gcd-machine (Machine '(a b t) __ops text))
                      
-             
+(set-reg-content gcd-machine 'a 15)
+(set-reg-content gcd-machine 'b 5)
+(start gcd-machine)
+(get-reg-content gcd-machine 'a)
