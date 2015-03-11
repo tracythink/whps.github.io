@@ -25,7 +25,7 @@
       (set! s (cons x s))
       (set! pushes (+ 1 pushes))
       (set! curdepth (+ 1 curdepth)))
-      ; (set! maxdepth (+ curdepth maxdepth))) must be error!
+      (set! maxdepth (max curdepth maxdepth))) ; bug fixed
     (define (pop)
       (if (null? s) (error "Stack.pop---Empty stack!")
           (let ((top (car s))) 
