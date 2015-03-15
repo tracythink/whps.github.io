@@ -70,8 +70,8 @@
 * [Tiger](https://github.com/whps/Tiger) C语言实现的编译型语言，实现了：简单的类型系统，嵌套函数，平凡作用域，
 结构体数据结构，常用函数库。前端lex+yacc，实现了AST，中间代码(更抽象的AST)，基本块和路径，指令生产。可以编译到汇编代码，具体[总结](https://github.com/whps/whps.github.io/issues/5)。
 
-* [Lisp Interpretation & Compiler](https://github.com/whps/whps.github.io/tree/master/stuff/tiny-item/Interpret)实现了
-lazy-evaluation, Stream。(未完接近结束)
+* [Lisp Interpretation](https://github.com/whps/whps.github.io/tree/master/stuff/tiny-item/Interpret)实现了
+lazy-evaluation, Stream，寄存器模型机器。
 
 <hr>
 
