@@ -79,10 +79,11 @@
 * 工作地点没有特殊要求。
  
 #### 关于我
-* 帮助工作室的学弟(妹)们出了一个C语言的[测试题](https://github.com/CIPPUS-SSS/assignment/blob/master/C-Lang-Exam-2014-12-16.md)
+
 * 有信心，有毅力，为热爱编程的人自豪。
 * 对于探求事物的__本质__十分感兴趣，追求知其所以然。
 * 我相信__数学__肯定是编程高手的法宝，但我数学不怎么好。
+* 帮助工作室的学弟(妹)们出了一个C语言的[测试题](https://github.com/CIPPUS-SSS/assignment/blob/master/C-Lang-Exam-2014-12-16.md)
 * 无论怎么样，生活起码要乐观吧。
 
 ---
