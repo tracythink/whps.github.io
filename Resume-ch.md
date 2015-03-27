@@ -1,4 +1,4 @@
-## [简历](https://github.com/whps/whps.github.io/edit/master/Resume-ch.md)
+## [简历](https://github.com/whps/whps.github.io/blob/master/Resume-ch.md)
 > Make them happy.
 
 #### 基本信息
