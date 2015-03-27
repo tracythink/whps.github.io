@@ -25,7 +25,7 @@
 * 大二上学习__后端__，用`php`开发了较多web项目：(这段时间熟悉了sql，网络交互，编程对我来说已经是一件快乐的事)
  1. 公司门户网站(带后台管理系统，前后台自己独立完成)。
  2. [Fshare](https://github.com/whps/whps.github.io/tree/master/stuff/tiny-item/fshare)是一个小型php项目，实现类似百度云基本功能:[秒传]。
- 3. 写过一个微信和wordpress交互的[插件wxiwp](https://github.com/whps/whps.github.io/tree/master/stuff/tiny-item/wxiwp)，wordpress推送给微信，微信用户使用命令交互。(第一笔外块)
+ 3. 写过一个微信和wordpress交互的[插件wxiwp](https://github.com/whps/whps.github.io/tree/master/stuff/tiny-item/wxiwp)，wordpress推送给微信，微信用户使用命令交互。(第一笔外快)
 
 * 大二暑假写了一个`C#`大作业，__极简易数据库__的实现[minsql](https://github.com/whps/whps.github.io/tree/master/stuff/tiny-item/minsql)。由于当时没有考虑编译，对于sql语句的处理用麻烦的字符串处理和正则，后端数据库实际存储实现极为简单。后来学了编译我发现自己的方法是笨拙的，不过实现的过程很顺利，用了一周。大约1000行。(这件事让我认识到正确的方法大于一切)
 
@@ -71,7 +71,8 @@
 
 #### 期望工作 & 未来
 
-* 希望成为一名 `System-Level-Developer` ，接下来会继续学习新的知识壮大自己，主要范围`操作系统+编译原理+数学`。
+* 希望成为一名 `System-Level-Developer` 。
+* 接下来会继续学习新的知识壮大自己，主要范围`操作系统+编译原理+数学`。
 * 找实习相关岗位(未找到实习则考研究生，补充数学和英文知识，啊哈哈哈)。
 * 工作地点没有特殊要求。
  
