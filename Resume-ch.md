@@ -1,12 +1,10 @@
 ## 简历
-> mkat them happy, why pass ?
+> Make them happy.
 
 #### 基本信息
 * 邓万程
 
-* 男.生于1994
-
-* [主页](http://whps.github.io/)
+* 男 __.__ 生于1994
 
 * [博客](https://github.com/whps/whps.github.io/issues)
 
