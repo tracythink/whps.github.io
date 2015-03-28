@@ -1,12 +1,12 @@
-#### RESUME OF WANCHENG DENG
-> make them happy, why pass ?
+#### [RESUME](https://github.com/whps/whps.github.io/blob/master/Resume-ch.md)
 
-<br/>
+> Make them happy.
 
-#### BASIC INFO {
+
+#### BASIC INFO
+* WANCHENG DENG
 * Man
 * Birthday: 06-30-1994
-* [Homepage](https://whps.github.io)
 * [Blog](https://github.com/whps/whps.github.io/issues)
 * [Github](https://github.com/whps)
 * E-mail: mkthpy@163.com
@@ -14,63 +14,64 @@
 * Education: DaLian University of Technical --- Software Engineering
 * Expectation-Position: System-Level-Develop
 
-#### }
-<br/>
+---
 
-#### SKILLS {
+#### SKILLS
+
+---
+
 ##### C Language
-```
+
 * Tiger: 
   A Compiler implement by C
   (read Modern Compiler Implement in C)
-* Able assem code 
+* Able assem code
   (konw some assme konwledge)
 * Read many deeply-understand boosk of C 
   (POINTERS ON C, C Traps and Pitfalls, Expert C Programming)
 * Konw OS and C code relationship 
   (compile, link and load)
   (read The Programmer's Self Cultivation)
-```
+
 
 ##### Linux
-```
+
 * basic shell command 
   (grep, ps, man, ssh, job, gcc, make, etc)
   (also know how to combine them to use)
 * read part of Linux surce-code (0.11)
   (know OS knowledge how to apply in Linux)
-  (memory-cache, process-schedule, protect-mode, memory-manage, etc)
-```
+  (memory-cache, process-schedule, memory-manage, etc)
+
 
 ##### Workspace
-```
-* ubuntu, windows7
-* vim, vs, sublime, etc
-* bash
-```
+
+* ubuntu / windows
+* vi / sublime / VS / bash
+* gcc / chrome
+* git / svn
+
 
 ##### Coding Language (sorted by good-at):
-```
-Best: C
-Able: Scheme (sicp-answer-code & lisp interpretation), 
-      C# (a simple lite-sql implement)
-      PHP (do many web items in before grade-3, also front-web)
-```
+
+* Best: __C__
+
+* Able: __Scheme__ (sicp-answer-code & lisp interpretation), 
+        __C#__ (a simple lite-sql implement)
+        __PHP__ (do many web items in before grade-3, also front-web)
+
 
 ##### Verson Control
-```
-Able git (personal items used)
-Konw About svn (develop web item used)
-```
 
-#### }
-<br/>
+* Able git (personal items used)
+* Konw About svn (develop web item used)
 
-#### AMATEUR & POINT {
-```
-* [make them happy] (influence people by my code) --- via stdio.h.
-* I trust math must be the Determinant in coding.
-* Have a great interesting in program-language-design.
-* Interested in Exploring the nature of things so l like sys-lv-dvlp.
-```
-#### }
+---
+
+#### About Me
+
+* I trust __math__ must be the Determinant in coding.
+* Have a great interesting in __program-language-design__.
+* Interested in Exploring the nature of things so l'd to be a __System-Level-Developer__.
+* Having a positive attitude face to life.
+
