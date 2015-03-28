@@ -22,7 +22,7 @@
 ##### C Language
 
 * Tiger: 
-  A __Compiler__ implement by C
+  A [Compiler](https://github.com/whps/Tiger) implement by C
   (read Modern Compiler Implement in C)
 * Able trans to assem code
   (konw some assme konwledge)
@@ -54,8 +54,8 @@
 ##### Coding Language (sorted by good-at):
 
 * Best: __C__
-* __Scheme__ (sicp-answer-code & lisp interpretation), 
-* __C#__ (a simple lite-sql implement)
+* __Scheme__ (sicp-answer-code & lisp [interpretation](https://github.com/whps/whps.github.io/tree/master/stuff/tiny-item/Interpret)), 
+* __C#__ (a simple [lite-sql](https://github.com/whps/whps.github.io/tree/master/stuff/tiny-item/minsql) implement)
 * __PHP__ (do some web items in before grade-3, also front-web)
 
 
