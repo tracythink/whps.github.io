@@ -23,11 +23,11 @@
 ##### C Language
 
 * Tiger: 
-  A Compiler implement by C
+  A __Compiler__ implement by C
   (read Modern Compiler Implement in C)
-* Able assem code
+* Able trans to assem code
   (konw some assme konwledge)
-* Read many deeply-understand boosk of C 
+* Read many deeply-understand books of C 
   (POINTERS ON C, C Traps and Pitfalls, Expert C Programming)
 * Konw OS and C code relationship 
   (compile, link and load)
@@ -57,7 +57,7 @@
 * Best: __C__
 * __Scheme__ (sicp-answer-code & lisp interpretation), 
 * __C#__ (a simple lite-sql implement)
-* __PHP__ (do many web items in before grade-3, also front-web)
+* __PHP__ (do some web items in before grade-3, also front-web)
 
 
 ##### Verson Control
