@@ -18,7 +18,6 @@
 
 #### SKILLS
 
----
 
 ##### C Language
 
