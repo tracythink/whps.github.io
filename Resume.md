@@ -55,10 +55,9 @@
 ##### Coding Language (sorted by good-at):
 
 * Best: __C__
-
-* Able: __Scheme__ (sicp-answer-code & lisp interpretation), 
-        __C#__ (a simple lite-sql implement)
-        __PHP__ (do many web items in before grade-3, also front-web)
+* __Scheme__ (sicp-answer-code & lisp interpretation), 
+* __C#__ (a simple lite-sql implement)
+* __PHP__ (do many web items in before grade-3, also front-web)
 
 
 ##### Verson Control
