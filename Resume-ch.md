@@ -162,7 +162,7 @@
 * Have a great interesting in __program-language-design__.
 * Interested in Exploring the nature of things so l'd to be a __System-Level-Developer__.
 * Having a positive attitude face to life.
-
+* Good attitude, Good math, Good coding.
 
 
 
