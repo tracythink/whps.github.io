@@ -73,7 +73,7 @@
 
 #### 期望工作 & 未来
 
-* 希望成为一名 `System-Level-Developer` 。
+* 希望成为一名基础架构工程师，做相关基础技术的工作 。
 * 接下来会继续学习新的知识壮大自己，主要范围`操作系统+编译原理+数学`。
 * 找实习相关岗位(未找到实习则考研究生，补充数学和英文知识，啊哈哈哈)。
 * 工作地点没有特殊要求。
@@ -160,7 +160,7 @@
 
 * I trust __math__ must be the Determinant in coding.
 * Have a great interesting in __program-language-design__.
-* Interested in Exploring the nature of things so l'd to be a __System-Level-Developer__.
+* Interested in Exploring the nature of things so l'd to be a Infrastructure Programmer.
 * Having a positive attitude face to life.
 * Good attitude, Good math, Good coding.
 
