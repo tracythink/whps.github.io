@@ -66,7 +66,7 @@
 * [minsql](https://github.com/whps/whps.github.io/tree/master/stuff/tiny-item/minsql) C#实现的小型数据库，前端用
 正则和字符串处理函数处理sql语句，直接分析出动作，无AST，支持功能: use, create, insert, select, delete, update, 通配符 `*`, 单条件where。
 
-* [Tiger](https://github.com/whps/Tiger) C语言实现的编译型语言，实现了：类型环境，值环境，类型检查，嵌套函数(闭包)，
+* [Tiger](https://github.com/whps/Tiger) C语言实现的编译型语言，实现了：类型环境，值环境，类型检查，嵌套函数，
 结构体，数组(都为隐式指针)。前端lex+yacc，实现了AST，中间代码，基本块和路径，指令选择。可以编译到汇编代码(寄存器分配未完成)，具体[总结](https://github.com/whps/whps.github.io/issues/5)。
 
 ---
