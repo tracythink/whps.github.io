@@ -35,7 +35,7 @@
 * [SICP](https://github.com/whps/whps.github.io/tree/master/stuff/tiny-item/Interpret)，简易解释器，初次接触函数式编程，学到了新的编程思想和技巧，以及抽象和建模能力。其中的思想让我受益无穷。
 
 * 大三下决定专做前端，[原因](https://github.com/whps/whps.github.io/issues/24)。复习了`html+css`，熟悉了`Js`,
-喜欢JS的函数式范式，以及基于原型的继承和方便的字面常量表示，能够用Js处理问题，理解Event-Loop循环驱动模型。关注H5，C3等新技术。认为移动端的开发必将成为web产品中重要的一环。常读的阮一峰博客。
+喜欢JS的函数式范式，以及基于原型的继承和方便的字面常量表示，能够用Js处理问题，理解Event-Loop循环驱动模型。关注H5，C3等新技术。认为移动端的开发必将成为web产品中重要的一环。常读阮一峰的博客。
 
 * __以上代码均为自己独立完成，独立调试，享受编码的过程与乐趣__。
 
