@@ -37,16 +37,18 @@
 
 * [SICP](https://github.com/whps/whps.github.io/tree/master/stuff/tiny-item/Interpret)，简易解释器，初次接触函数式编程，学到了新的编程思想和技巧，以及抽象和建模能力。SICP的内容值得反复品读，其中体现的思想在计算机乃至科学的各个方面都是受益无穷的，SICP是一本奇书。(我的技术经历让我认识到知识是无限的，must keep studying)
 
+* TO DO
+
 * __以上代码均为自己独立完成，独立调试，享受编码的过程与乐趣__。
 
 ---
  
 #### 语言(按__熟悉+喜爱__程度排行)
-1 => `C` / `Scheme`
+1 =>  `Scheme` / `C`
 
-2 => `PHP` / `C#` / `Assembly`
+2 => `javascript` / `C#` / `Assembly`
 
-3 => `javascript` / `python`
+3 =>  `PHP` / `python`
  
  
 #### 技能(水平一般)
@@ -54,26 +56,24 @@
 * vi / sublime / VS / bash
 * gcc / chrome
 * git / svn
-
+* 能用VS做profile
 ---
 
 #### 项目
 * [wxiwp](https://github.com/whps/whps.github.io/tree/master/stuff/tiny-item/wxiwp) 大连云间牧场公司web项目，微信和wordpress 交互的插件。可传输博客文章，图像，并且对于用户有记忆功能，
 可推送用户指定文章，搜索，最新，最热等，需要用户手动键入命令。
 
-* [minsql](https://github.com/whps/whps.github.io/tree/master/stuff/tiny-item/minsql) C#实现的小型数据库，前端用
-正则和字符串处理函数处理sql语句，直接分析出动作，无AST，支持功能: use, create, insert, select, delete, update, 通配符 `*`, 单条件where。
-
 * [Tiger](https://github.com/whps/Tiger) C语言实现的编译型语言，实现了：类型环境，值环境，类型检查，嵌套函数，
 结构体，数组(都为隐式指针)。前端lex+yacc，实现了AST，中间代码，基本块和路径，指令选择。可以编译到汇编代码(寄存器分配未完成)，具体[总结](https://github.com/whps/whps.github.io/issues/5)。
 
+* [Homepage](https://whps.github.io) 用`jQury + css + jQuery Mobile` 实现的个人主页移动，PC版。能兼容到IE8，
+具体[制作](https://github.com/whps/whps.github.io/issues/26)。
 ---
 
 #### 期望工作 & 未来
 
-* 希望成为一名基础架构工程师，做相关基础技术的工作 。
-* 接下来会继续学习新的知识壮大自己，主要范围`操作系统+编译原理+数学`。
-* 找实习相关岗位(未找到实习则考研究生，补充数学和英文知识，啊哈哈哈)。
+* 希望成为一名前端工程师，做相关web开发的工作都可以。
+* 接下来会继续学习新的知识壮大自己，主要是`编译原理`。
 * 工作地点没有特殊要求。
  
 #### 关于我
@@ -82,85 +82,4 @@
 * 对于探求事物的__本质__十分感兴趣，追求知其所以然。
 * 我相信__数学__肯定是编程高手的法宝，但我数学不怎么好。
 * 帮助工作室的学弟(妹)们出了一个C语言的[测试题](https://github.com/CIPPUS-SSS/assignment/blob/master/C-Lang-Exam-2014-12-16.md)
-* 无论怎么样，生活起码要乐观吧。
-
----
-
-#### [RESUME](https://github.com/whps/whps.github.io/blob/master/Resume-ch.md)
-
-> Make them happy.
-
-
-#### BASIC INFO
-* WANCHENG DENG
-* Man
-* Birthday: 06-30-1994
-* [Blog](https://github.com/whps/whps.github.io/issues)
-* [Github](https://github.com/whps)
-* E-mail: mkthpy@163.com
-* Tel: 18742518032
-* Education: DaLian University of Technical --- Software Engineering
-* Expectation-Position: System-Level-Develop
-
----
-
-#### SKILLS
-
-
-##### C Language
-
-* Tiger: 
-  A [Compiler](https://github.com/whps/Tiger) implement by C
-  (read Modern Compiler Implement in C)
-* Able trans to assem code
-  (konw some assme konwledge)
-* Read many deeply-understand books of C 
-  (POINTERS ON C, C Traps and Pitfalls, Expert C Programming)
-* Konw OS and C code relationship 
-  (compile, link and load)
-  (read The Programmer's Self Cultivation)
-
-
-##### Linux
-
-* basic shell command 
-  (grep, ps, man, ssh, job, gcc, make, etc)
-  (also know how to combine them to use)
-* read part of Linux surce-code (0.11)
-  (know OS knowledge how to apply in Linux)
-  (memory-cache, process-schedule, memory-manage, etc)
-
-
-##### Workspace
-
-* ubuntu / windows
-* vi / sublime / VS / bash
-* gcc / chrome
-* git / svn
-
-
-##### Coding Language (sorted by good-at):
-
-* Best: __C__
-* __Scheme__ (sicp-answer-code & lisp [interpretation](https://github.com/whps/whps.github.io/tree/master/stuff/tiny-item/Interpret)), 
-* __C#__ (a simple [lite-sql](https://github.com/whps/whps.github.io/tree/master/stuff/tiny-item/minsql) implement)
-* __PHP__ (do some web items in before grade-3, also front-web)
-
-
-##### Verson Control
-
-* Able git (personal items used)
-* Konw About svn (develop web item used)
-
----
-
-#### About Me
-
-* I trust __math__ must be the Determinant in coding.
-* Have a great interesting in __program-language-design__.
-* Interested in Exploring the nature of things so l'd to be a Infrastructure Programmer.
-* Having a positive attitude face to life.
-* Good attitude, Good math, Good coding.
-
-
-
+* 喜欢打篮球，打台球。
