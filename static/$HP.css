@@ -1,0 +1,193 @@
+html, body {
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	font-family: "Microsoft YaHei", Verdana, sans-serif, "SimSun";
+	color: #CCFFFF;
+}
+div, ul, li {
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+}
+
+#cont {
+	height: 100%;
+	width: 87%;
+	float: left;
+	position: relative;
+}
+#rbar {
+	height: 100%;
+	width: 13%;
+	float: left;
+	background: #ccddcc;
+	position: relative;
+}
+#rbar a {
+	display: block;
+	margin: 45% 0;
+	position: relative;
+	left: 35%;
+}
+#rbar a img {
+	height: 33%;
+	width: 33%;
+}
+#rbar span{
+	font-size: 60%;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+.incont {
+	margin: 0;
+	position: absolute;
+	display: none;
+}
+.incont p {
+	text-align: center;
+	position: relative;
+	top: 40%;
+	margin: 0;
+	font-size: 200%;
+	color: #005dff;
+}
+.incont .real {
+	width: 60%;
+	position: absolute;
+	left: 27%;
+	top: 7%;
+	font-size: 1.1em;
+	display: none;
+}
+.cancel {
+	right: 0;
+	top: 0;
+	position: absolute;
+	display: none;
+	cursor: pointer;
+}
+.coverbg, .uptips {
+	width: 100%;
+	height: 100%;
+	display: none;
+	position: absolute;
+	background: black;
+	text-align: center;
+}
+.uptips {
+	bottom: 0;
+	padding: 2% 0;
+}
+.coverbg {
+	left: 0;
+	top: 0;
+}
+
+#c0 {
+	background: #00CCFF;
+}
+#c1 {
+	background: #00CCCC;
+}
+#c2 {
+	background: #33CCFF;
+}
+#c3 {
+	background: #33CCCC;
+}
+#c4 {
+	background: #00dde0;
+}
+#c5 {
+	background: #44CCFF;
+}
+#c6 {
+	background: #33ccdd;
+}
+#c7 {
+	background: #00ccff;
+}
+
+#c1 li {
+	margin: 9% 0;
+}
+
+.real li {
+	margin: 6% 0;
+}
+
+.nps:before {
+	content: url(imgs/pin-16.png);
+}
+
+.ps:before {
+	content: url(imgs/ps-20.png);
+}
+
+#music:before {
+	content:url(imgs/music-24.png);
+}
+
+#movie:before {
+	content:url(imgs/movie-24.png);
+}
+
+#sports:before {
+	content:url(imgs/hot-24.png);
+}
+
+#favorite:before {
+	content: url(imgs/favorite-24.png);
+}
+
+#compile:before {
+	content: url(imgs/compile-24.png);
+}
+
+#computer:before {
+	content: url(imgs/computer-24.png);
+}
+
+#turing:before {
+	content: url(imgs/turing-24.png);
+}
+
+#tool:before {
+	content: url(imgs/tool-24.png);
+}
+
+.link a {
+	text-decoration: none;
+	color: #CCFFFF;
+}
+
+.link a:hover {
+	color: #006666;
+}
+
+#blog {
+	left: 33%;
+	font-size: 1.2em;
+}
+
+.link:before {
+	content: url(imgs/link-16.png);
+}
+
+.happy:before {
+	content: url(imgs/happy-16.png);
+}
+
+.saying:before {
+	content: url(imgs/saying-16.png);
+}
+
+#poster {
+	position: absolute;
+	left: 27%;
+	top: 0;
+	display: none;
+}
