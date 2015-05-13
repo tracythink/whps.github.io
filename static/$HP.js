@@ -28,7 +28,7 @@ $(function() {
 				width: blk[0],
 				height: blk[1],
 				left: blk[2],
-				top: blk[3],
+				top: blk[3]
 			}).fadeIn("slow").children("p").css("opacity", "0.4");
 			$(tipobjs[idx]).css({"opacity": "0.5"});
 		});
@@ -65,7 +65,7 @@ $(function() {
 			width: "100%",
 			height: "100%",
 			left: "0%",
-			top: "0%",
+			top: "0%"
 		}, "fast").children(".cancel").fadeIn();
 		$(realobjs[i]).fadeIn();
 	}).hover(mover, mleave);
@@ -77,7 +77,7 @@ $(function() {
 			width: settings.blks[i][0],
 			height: settings.blks[i][1],
 			left: settings.blks[i][2],
-			top: settings.blks[i][3],
+			top: settings.blks[i][3]
 		}, "fast", function(){
 			$(divobjs[i]).bind("mouseenter", mover).bind("mouseleave", mleave);
 		});
