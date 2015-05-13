@@ -24,20 +24,18 @@
 * 大一初学__web前端__，能用`js`+`css`+`html`开发，写过很漂亮的网页，具有较好审美和色彩搭配水平，[个人主页](https://whps.github.io/)
   (这段时间产生了对编程的兴趣)
 
-* 大二上学习__后端__，用`php`开发了较多web项目：(这段时间熟悉了sql，网络交互，编程对我来说已经是一件快乐的事)
- 1. 公司门户网站(带后台管理系统，前后台自己独立完成)。
- 2. [Fshare](https://github.com/whps/whps.github.io/tree/master/stuff/tiny-item/fshare)是一个小型php项目，实现类似百度云基本功能:[秒传]。
- 3. 写过一个微信和wordpress交互的[插件wxiwp](https://github.com/whps/whps.github.io/tree/master/stuff/tiny-item/wxiwp)，wordpress推送给微信，微信用户使用命令交互。(第一笔外快)
+* 大二上学习__后端__，用`php`开发了较多web项目：(这段时间了解了sql，网络交互)
 
-* 大二暑假写了一个`C#`大作业，__极简易数据库__的实现[minsql](https://github.com/whps/whps.github.io/tree/master/stuff/tiny-item/minsql)。由于当时没有考虑编译，对于sql语句的处理用麻烦的字符串处理和正则，后端数据库实际存储实现极为简单。后来学了编译我发现自己的方法是笨拙的，不过实现的过程很顺利，用了一周。大约1000行。(这件事让我认识到正确的方法大于一切)
+* 大二暑假写了一个`C#`大作业，__极简易数据库__的实现[minsql](https://github.com/whps/whps.github.io/tree/master/stuff/tiny-item/minsql)。当时没有考虑编译，对于sql语句的处理用麻烦的字符串处理和正则，后端的实际存储实现极为简单。不过实现的过程很顺利，用了一周。约1000行。(这件事让我认识到正确的方向是非常重要的)
 
-* 大二下学习__编译原理__，__操作系统__两门课，学完结果是基本不懂，于是我认真反思，结论是基本功太烂，[具体经历](https://github.com/whps/whps.github.io/issues/8) 。于是我狠狠啃了C语言以及相关操作系统知识，为我的编译器[Tiger](https://github.com/whps/Tiger)项目奠定了基础，同时补充了编译知识。(对于计算机系统的理解深刻了许多，成为C语言爱好者！)
+* 大二下学习__编译原理__，__操作系统__两门课，学校教学基本不起作用，于是我认真反思，结论是基本功太烂，[具体经历](https://github.com/whps/whps.github.io/issues/8) 。于是我狠狠啃了C语言以及相关操作系统知识，为我的编译器[Tiger](https://github.com/whps/Tiger)项目奠定了基础，同时补充了编译知识。(对于计算机系统的理解深刻了许多，成为C语言爱好者)
 
 * 大三上开始写__博客__，记录技术成长经历。(写博客不仅可以分享给别人，写作能力也有提高)
 
-* [SICP](https://github.com/whps/whps.github.io/tree/master/stuff/tiny-item/Interpret)，简易解释器，初次接触函数式编程，学到了新的编程思想和技巧，以及抽象和建模能力。SICP的内容值得反复品读，其中体现的思想在计算机乃至科学的各个方面都是受益无穷的，SICP是一本奇书。(我的技术经历让我认识到知识是无限的，must keep studying)
+* [SICP](https://github.com/whps/whps.github.io/tree/master/stuff/tiny-item/Interpret)，简易解释器，初次接触函数式编程，学到了新的编程思想和技巧，以及抽象和建模能力。其中的思想让我受益无穷。
 
-* TO DO
+* 大三下决定专做前端，[原因](https://github.com/whps/whps.github.io/issues/24)。复习了`html+css`，熟悉了`Js`,
+喜欢JS的函数式范式，以及基于原型的继承和方便的字面常量表示，能够用Js处理问题，理解Event-Loop循环驱动模型。关注H5，C3等新技术。认为移动端的开发必将成为web产品中重要的一环。常读的阮一峰博客。
 
 * __以上代码均为自己独立完成，独立调试，享受编码的过程与乐趣__。
 
@@ -51,7 +49,7 @@
 3 =>  `PHP` / `python`
  
  
-#### 技能(水平一般)
+#### 技能
 
 * vi / sublime / VS / bash
 * gcc / chrome
