@@ -39,7 +39,7 @@ function continueNMin(a, n) {
 	
 	tmp = min;
 	
-	for (var i = 1; i < length; i++) {
+	for (var i = 1; i <= length; i++) {// bug fix (bound condition)
 		tmp = tmp - a[i-1] + a[i+n-1] ;
 		if (tmp < min) min = tmp;
 	}
