@@ -67,7 +67,7 @@
 * [Homepage](https://whps.github.io) 用`jQury + css + jQuery Mobile` 实现的个人主页移动，PC版。能兼容到IE8，
 具体[制作](https://github.com/whps/whps.github.io/issues/26)。
 
-* 【minsql => 级简易数据库的实现(C#), whps.lex => (类lex的词法分析的实现)】。
+* 【minsql => 级简易数据库的实现(C#) //// whps.lex => (类lex的词法分析的实现)】。
 
 ---
 
