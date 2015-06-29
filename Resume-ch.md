@@ -28,7 +28,7 @@
 
 * 大二暑假写了一个`C#`大作业，__极简易数据库__的实现[minsql](https://github.com/whps/whps.github.io/tree/master/stuff/tiny-item/minsql)。当时没有考虑编译，对于sql语句的处理用麻烦的字符串处理和正则，后端的实际存储实现极为简单。不过实现的过程很顺利，用了一周。约1000行。(这件事让我认识到正确的方向是非常重要的)
 
-* 大二下学习__编译原理__，__操作系统__两门课，学校教学基本不起作用，于是我认真反思，结论是基本功太烂，[具体经历](https://github.com/whps/whps.github.io/issues/8) 。于是我狠狠啃了C语言以及相关操作系统知识，为我的编译器[Tiger](https://github.com/whps/Tiger)项目奠定了基础，同时补充了编译知识。(对于计算机系统的理解深刻了许多，成为C语言爱好者)
+* 大二下学习__编译原理__，__操作系统__两门课，学校教学基本不起作用，于是我认真反思，结论是基本功太烂，[具体经历](https://github.com/whps/whps.github.io/issues/8) 。于是我狠狠啃了C语言以及相关操作系统知识，为我的编译器[Tiger](https://github.com/whps/Tiger)项目奠定了基础，同时补充了编译知识。(对于计算机系统的理解深刻了许多)
 
 * 大三上开始写__博客__，记录技术成长经历。(写博客不仅可以分享给别人，写作能力也有提高)
 
@@ -62,7 +62,7 @@
 可推送用户指定文章，搜索，最新，最热等，需要用户手动键入命令。
 
 * [Tiger](https://github.com/whps/Tiger) C语言实现的编译型语言，实现了：类型环境，值环境，类型检查，嵌套函数，
-结构体，数组(都为隐式指针)。前端lex+yacc，实现了AST，中间代码，基本块和路径，指令选择。可以编译到汇编代码(寄存器分配未完成)，具体[总结](https://github.com/whps/whps.github.io/issues/5)。
+结构体，数组(都为隐式指针)。前端lex+yacc，实现了AST，中间代码，基本块和路径，指令选择。可以编译到汇编代码(寄存器分配未完成)，具体[总结](https://github.com/whps/whps.github.io/issues/5)(这个项目是我的__VVIP__转折点，我很感谢这个项目，不仅培养了我对编程本身的热爱，而且我看待问题也变得辩证了许多)。
 
 * [Homepage](https://whps.github.io) 用`jQury + css + jQuery Mobile` 实现的个人主页移动，PC版。能兼容到IE8，
 具体[制作](https://github.com/whps/whps.github.io/issues/26)。
