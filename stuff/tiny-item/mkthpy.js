@@ -68,8 +68,8 @@ var echo = console.log;
 		/* return value && 
 			typeof value === 'object' && 
 			value.constructor === Array; */
-		return value && 							// first must be a real value
-			typeof value === 'object' &&			// for obj, array, null will be true
+		return value && 				// first must be a real value
+			typeof value === 'object' &&		// for obj, array, null will be true
 			typeof value.length === 'number' &&     // length is a number? array always true
 			typeof value.splice === 'function' &&   // has a splice func? array always true
 			!(value.propertyIsEnumerable('length'));// but array.length is UnEnum
