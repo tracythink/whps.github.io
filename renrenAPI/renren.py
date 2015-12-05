@@ -1,7 +1,7 @@
 ﻿#-*-coding:utf-8-*-
 
 # 人人各种接口
-
+# sorry 没有写类似package.json 的包依赖
 import requests
 import json
 import re
