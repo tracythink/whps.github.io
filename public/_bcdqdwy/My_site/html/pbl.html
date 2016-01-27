@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>pbl</title>
+<style>
+*{margin:0; padding:0;}
+#container{ border:1px solid #FFF; margin:50px auto; position:relative;}
+#container img{ position:absolute;} 
+#loader{width:100%; height:60px; background:url(../image/loader.gif) no-repeat center #FFF; position:fixed; bottom:0; left:0; display:none;}
+</style>
+<script src="../Js/jqurey_pbl.js">
+</script>
+<script>
+$(function(){
+	//计算列 
+	var oContainer = $('#container');
+	var iWidth = 200;//列宽
+	var iSpace = 10;//间隔宽
+	var iOuterWidth = iWidth + iSpace;//实际宽
+	var iCells = 0;//总列
+	var arrT = [];
+	var arrL = [];
+	var iPage = 0;
+	var iBtn = true;
+	var sUrl = 'http://www.wookmark.com/api/json/popular?callback=?';
+	function setCell(){
+		iCells = Math.floor($(window).innerWidth() / iOuterWidth);
+		if(iCells<3){
+			iCells=3;
+		}else if(iCells > 6){
+			iCells =8;
+		}
+		//document.title = iCells;
+		oContainer.css('width',iOuterWidth*iCells - 10);
+	}
+	
+	setCell();
+	for(var i= 0;i<iCells;i++){
+		arrT [i]= 0;
+		arrL[i] = iOuterWidth * i;
+	}
+	
+	function getData(){
+		if(!iBtn){
+			return;
+		}
+		iBtn = false;
+		iPage++;
+		$.getJSON(sUrl,{page:iPage},function(jData){
+			$('#loader').show();
+			$.each(jData,function (index, obj){
+				var oImg = $('<img/>');
+				
+				var iHeight = obj.height *(iWidth /obj.width);
+				
+				oImg.css({width:iWidth,
+				          height: iHeight
+				});
+				var _index = getMin();
+				oImg.css({
+					left	:	arrL[_index],
+					top		:	arrT[_index]
+				});
+
+		        
+				arrT[_index] += iHeight + 10;
+				
+				oContainer.append(oImg);
+				var objImg = new Image();
+				objImg.onload = function(){
+					oImg.attr('src',this.src);
+				}
+				objImg.src = obj.preview;
+				setTimeout(function(){
+					$('#loader').hide();
+				},1000)
+				
+				iBtn =true;
+			})
+		});
+	}
+	getData();
+	function getMin(){
+		var v=arrT[0];
+		var _index =0;
+		for(var i=1;i<arrT.length;i++){
+			if(arrT[i]<v){
+				v = arrT[i];
+				_index = i;
+			}
+		}
+		return _index;
+	}
+	$(window).on('scroll',function() {
+		var _index = getMin();
+		var iH = $(window).scrollTop() + $(window).innerHeight();
+		if(arrT[_index]+ oContainer.offset().top < iH){
+			//iPage++;
+			getData();
+		}
+	})
+	
+	$(window).on('resize',function() {
+		
+		var ilen = iCells;
+		setCell();
+		arrT = [];
+		arrL = [];
+		for (var i=0; i<iCells; i++) {
+			arrT[i] = 0;
+			arrL[i] = iOuterWidth * i;
+		}
+		oContainer.find('img').each(function() {
+			
+			var _index = getMin();
+			$(this).animate({
+				left	:	arrL[_index],
+				top		:	arrT[_index]
+			}, 800);
+			arrT[_index] += $(this).height() + 10;
+			
+		})
+	})
+});
+</script>
+</head>
+
+<body>
+ <div id="container">
+ </div>
+ <div id="loader"></div>
+</body>
+</html>

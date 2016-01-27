@@ -1,0 +1,23 @@
+<a href=""></a>
+<a href=""></a>
+<a href=""></a>
+<a href=""></a>
+<a href=""></a>
+
+<script type="text/javascript">
+	var map = {
+		'_bcdqdwy/5.html': '_bcdqdwy/5.html',
+		'_bcdqdwy/8.html':  '_bcdqdwy/8.html',
+		'_bcdqdwy/My_site/html/First_page.html': '_bcdqdwy/My_site/html/First_page.html',
+		'_cjxxcdweb/html/hp.html': '_cjxxcdweb/html/hp.html',
+		'_dxwyhjzp/hoverDir/': '_dxwyhjzp/hoverDir/' 
+	}
+	var ids = Object.keys(map);
+	var links = document.getElementsByTagName('a');
+	links = Array.prototype.slice.apply(links);
+	links.forEach(function(l, i) {
+		l.innerText = ids[i]
+		l.href = 'http://whps.github.com/' + ids[i];
+		l.style.display = 'block'
+	});
+</script>

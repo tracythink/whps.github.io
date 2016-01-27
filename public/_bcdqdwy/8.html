@@ -1,0 +1,228 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Storage</title>
+<style>
+body {
+	background-image:url(bg_1.jpg);background-attachment:fixed; background-size:cover;background-repeat:no-repeat;
+	font-size: 100%;
+}
+
+form{ display:block;
+	text-align:center;
+}
+form input#note_text {
+	width: 300px;
+	height:25px;
+	font-size:18px;
+	border-radius:2px;
+}
+form input#add_button {
+	height:36px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	background-color:#6CF;cursor:pointer;border-radius:5px;border:1px solid #6CF;
+	color:#633;
+}
+
+#stickies{display:block; height:500px; border:1px solid #333; border-radius:5px; margin:10px 15px;}
+
+ul#stickies li {
+	display: block;
+	list-style: none;
+	z-index: 1;
+	float: left; 
+	margin: 30px;
+	padding: 15px 15px 50px 15px;
+	width: 200px;
+	height: 100px;
+	border: 1px solid #bfbfbf;
+    background-color: LightGoldenRodYellow;  /* use #fafad2 if name doesn't work */
+	color: black;
+	text-decoration: none;
+	-webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+	-o-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+	-webkit-transition: all 0.1s ease-in;
+	-moz-transition: all 0.5s ease-in;
+	-o-transition: all 0.5s ease-in;
+	-ms-transition: all 0.5s ease-in;
+	transition: all 0.5s ease-in;
+	overflow: hidden;
+} 
+
+ul#stickies li span.sticky {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 200%;
+}
+
+ul#stickies li:nth-child(even) {
+	-webkit-transform: rotate(2deg);
+	-moz-transform: rotate(2deg);
+	-o-transform: rotate(2deg);
+	-ms-transform: rotate(2deg);
+	transform: rotate(2deg);
+}
+
+ul#stickies li:nth-child(odd) {
+	-webkit-transform: rotate(-1deg);
+	-moz-transform: rotate(-1deg);
+	-o-transform: rotate(-1deg);
+	-ms-transform: rotate(-1deg);
+	transform: rotate(-1deg);
+}
+
+ul#stickies li:nth-child(3n) {
+	-webkit-transform: rotate(1deg);
+	-moz-transform: rotate(1deg);
+	-o-transform: rotate(1deg);
+	-ms-transform: rotate(1deg);
+	transform: rotate(1deg);
+}
+
+ul#stickies li:hover {
+	-webkit-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.4);
+	-o-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.4);
+	-webkit-transform: rotate(0deg) scale(1.3);
+	-moz-transform: rotate(0deg) scale(1.25);
+	-o-transform: rotate(0deg) scale(1.25);
+	-ms-transform: rotate(0deg) scale(1.25);
+	transform: rotate(0deg) scale(1);
+	z-index: 10;
+}
+label{ font-family:Georgia, "Times New Roman", Times, serif; font-size:24px;  color:#633;
+}
+#note_color{width:80px; height:30px; font-family:Verdana, Geneva, sans-serif; font-size:16px;
+}
+</style>
+<script>
+window.onload = init;
+function init(){
+	var Cb = document.getElementById("All_clear_button");
+	Cb.onclick = clearStorage;
+	var button = document.getElementById("add_button");
+	button.onclick = createSticky;
+	 
+    var stickiesArray= getStickiesArray();
+
+	for(i=0; i<stickiesArray.length; i++){
+		var key = stickiesArray[i];
+		var value = JSON.parse(localStorage[key]);
+		addStickyToDOM(key,value);
+	}
+}
+function getStickiesArray(){
+	var stickiesArray = localStorage["stickiesArray"];
+	if(!stickiesArray){
+		stickiesArray= [];
+		localStorage.setItem("stickiesArray",JSON.stringify(stickiesArray));
+	}
+	else{
+		stickiesArray = JSON.parse(stickiesArray);
+	}
+	return stickiesArray;
+}
+function clearStorage(){
+	localStorage.clear();
+	window.location.reload();
+}
+function createSticky(){
+	var stickiesArray=getStickiesArray();
+	var value = document.getElementById("note_text").value;
+	var colorSelectObj = document.getElementById("note_color");
+	var index = colorSelectObj.selectedIndex;
+	var color = colorSelectObj[index].value;
+	var c = new Date(); 
+	var key = "sticky_"+c.getTime();
+	var stickyObj={
+		"value":value,
+		"color":color
+	};
+	localStorage.setItem(key,JSON.stringify(stickyObj));
+	stickiesArray.push(key);
+	localStorage.setItem("stickiesArray",JSON.stringify(stickiesArray));
+	addStickyToDOM(key,stickyObj);
+}
+function addStickyToDOM(key,stickyObj){
+	var stickies=document.getElementById("stickies");
+	var sticky = document.createElement("li");
+	sticky.setAttribute("id",key);
+	sticky.style.backgroundColor = stickyObj.color;
+	var span = document.createElement("span");
+	span.setAttribute("class","sticky");
+	span.innerHTML = stickyObj.value;
+	sticky.appendChild(span);
+	stickies.appendChild(sticky);
+	sticky.onclick = deleteSticky;
+}
+function deleteSticky(key){
+	localStorage.removeItem(key);
+	var stickiesArray= getStickiesArray();
+	if(stickiesArray){
+		for(var i =0; i < stickiesArray.length;i++){
+			if(key==stickiesArray[i]){
+				stickiesArray.splice(i,1);
+			}
+		}
+	    localStorage.setItem("stickiesArray",JSON.stringify(stickiesArray));	
+	}
+}
+function deleteSticky(e){
+	var key = e.target.id;
+	if(e.target.tagName.toLowerCase()=="span"){
+		key = e.target.parentNode.id;
+	}
+	localStorage.removeItem(key);
+	var stickiesArray = getStickiesArray();
+	if(stickiesArray){
+		for(var i=0;i<stickiesArray.length;i++){
+			if(key == stickiesArray[i]){
+				stickiesArray.splice(i,1);
+			}
+		}
+		localStorage.setItem("stickiesArray",JSON.stringify(stickiesArray));
+		removeStickyFromDOM(key);
+	}
+}
+function removeStickyFromDOM(key){
+	var sticky = document.getElementById(key);
+	sticky.parentNode.removeChild(sticky);
+}
+function BuEnter(obj){
+	var bu=document.getElementById("add_button");
+	if(obj.keyCode==13){
+		bu.click();
+		obj.returnValue = false;
+	}
+}
+</script>
+</head>
+
+<body>
+  <form>
+   <label for="note_color">Color:</label>
+   <select id="note_color">
+    <option value="LightGoldenRodYellow">yellow</option>
+	<option value="PaleGreen">green</option>
+	<option value="LightPink">pink</option>
+	<option value="LightBlue">blue</option>
+   </select>
+   <label for="note_text">Text:</label>
+   <input type="text" id="note_text"  onkeydown="BuEnter(event)">
+   <input type="button"  id="add_button" value="Add Note to Self"; onmouseover="document.getElementById('add_button').style.backgroundColor='#0CF';"
+  onmouseout="document.getElementById('add_button').style.backgroundColor='#6CF'; "> 
+  </form>
+ 
+ <ul id="stickies">
+ </ul>
+ 
+ <form>
+  <input type="button" id="All_clear_button" value="All Clear" onmouseover="document.getElementById('All_clear_button').style.backgroundColor='#F00';"
+  onmouseout="document.getElementById('All_clear_button').style.backgroundColor='#F03'; "
+  style="width:100px; height:35px; background-color:#F03; border:1px solid #F03; cursor:pointer; border-radius:5px; color:#CCC; font-size:14px; font-family:'Palatino Linotype', 'Book Antiqua', Palatino, serif;">
+ </form>
+ 
+</body>
+</html>

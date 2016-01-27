@@ -1,0 +1,86 @@
+*{
+				font-family:"Comic Sans MS", cursive; 
+				margin:0; 
+				padding:0;
+				overflow:hidden;
+				}
+		    body{background:rgb(65,150,204);}
+			header{margin:0 auto;height:640px; opacity:0.82;overflow:hidden;}
+			
+			h1{
+				float:left;
+				position:relative;
+				bottom:0; 
+				margin-left:10px; 
+				display:none;
+				font-size:56px;
+				}
+				
+			.topbot{
+				position:absolute; 
+				bottom:90px; 
+				height:30px; 
+				left:40%;
+				overflow:visible;
+				}
+				
+			.bottop{position:absolute; top:0px; height:30px; left:35%;overflow:visible;}
+			
+			
+            #top{ background:#EEE;height: 320px;position:relative; overflow:hidden;}
+			
+            #bot{ background:#EEE;height: 320px;position:relative; overflow:hidden;}
+			
+			section{ position:absolute; z-index:-1; top:0; width:100%; overflow:hidden;}
+			
+			#nav{height:40px;background-color:#252525; padding-left:26px;}
+			
+			li{
+				float:left; 
+				list-style:none;
+				margin-left:20px; 
+				position:relative; 
+				display:block;
+				font-size:24px;
+				
+				}
+			
+			li a{color:#CCC; text-decoration:none}
+			
+			#con{height:600px; background:rgb(65,150,204);}
+			
+			#midcon{
+				background:#FFF; 
+				width:700px; 
+				height:500px; 
+				margin:0 auto;
+                border:1px solid #CCC; 
+				position:absolute;
+				margin-top:50px; 
+				left:50px;
+				}
+				
+			.right{float:right; margin-right:50px;}
+			
+			#logout{width:115px; height:60px; float:right; position:relative; overflow:hidden;}
+			#logout div{
+				width:20px; height:20px;  margin-left:5px; float:left; 
+				position:relative;
+				top:60px;
+				border-radius:8px;
+				cursor:pointer;
+				}
+			.div1{ background:url(img1.jpg)}
+			.div2{ background:url(images%202.jpg)}
+			.div3{ background:url(images%203.jpg);}
+			#midcon div{
+				float:left; height:33%; width:24.7%; overflow:hidden; 
+			    border:1px solid white;
+				position:absolute;
+				background:#666;
+				cursor:pointer;
+				}
+				
+			h2{float:left; opacity:0.5; font-size:36px;}
+			img{float:left;}]
+			.arrStr{ line-height:5px; word-spacing:10px;}
