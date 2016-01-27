@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<link rel="shshortcut icon" href="favicon.ico" />
+<meta charset="utf-8">
+<title>Logo</title>
+<style>
+body{}
+#Pw{border-radius:3px;height:35px; float:left; margin-left:12px;font-size:18px; margin-top:35px; border:1px solid #6CF;}
+#p{display:block; margin-top:8px; text-decoration:none;color:#FFF;}
+#con{width:66px;height:42px;background-color:#6CF;cursor:pointer;border-radius:5px;font-size:18px;text-align:center;float:left;margin-top:32px; margin-left:5px;}
+#wrong{margin-left:10px; color:#F03; font-size:18px; font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;}
+#de{width:350px;height:200px;;font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif; color:#FFFBF0;float:left; font-size:25px;}
+</style>
+<script>
+window.onload=init;
+function init(){
+var button=document.getElementById("p");
+// button.onclick = handClick;
+var bood = Math.floor(Math.random()*160);
+    if(80>bood){
+		document.getElementById("x").style.backgroundImage="url(../image/H_bg.jpg)";
+	}
+	else if(bood>=80){
+		document.getElementById("x").style.backgroundImage="url(../image/H_bg2.jpg)";
+	}
+}
+// function handClick(){
+//     var b=document.getElementById("p");
+// 	var Pw="adwc13579724969";
+// 	var temp=document.getElementById("Pw").value;
+// 	var cout=document.getElementById("wrong");
+// 	if(temp==""){
+// 		b.href="#";
+// 		cout.innerHTML="Please Input Password!!";
+// 	}
+// 	else{
+// 		if(temp==Pw){
+// 			b.href="First_page.html";
+// 		}
+// 		else{
+// 			b.href="#";
+// 			cout.innerHTML="Pw Wrong!! Input again";
+// 		}
+// 	}
+// }
+function BuEnter(obj){
+	var bu=document.getElementById("p");
+	if(obj.keyCode==13){
+		bu.click();
+		obj.returnValue = false;
+	}
+}
+</script>
+</head>
+
+<body id="x" style="background-attachment:fixed; background-size:cover;background-repeat:no-repeat;">
+<div style="width:660px;margin:190px auto;">
+ <div id="de">
+ welcome to &nbsp;<span style=" font-weight:700; font-size:29px;">Cdream</span>
+ <p style=" font-size:16px;">cares who you care , searching , sharing</p>
+ </div>
+ <div style=
+ "width:299px;height:120px; background-color:#EEE; border-radius:5px; font-family:Verdana, Geneva, sans-serif;float:left;">
+  <input type="password" id="Pw" placeholder="PassWord"  onkeydown="BuEnter(event)">
+  <!-- <p id="con" onmouseover="document.getElementById('con').style.backgroundColor='#0CF';"
+  onmouseout="document.getElementById('con').style.backgroundColor='#6CF'; ">
+  <a target="_parent" id="p"href="#">Log in</a>
+  </P> -->
+  <p id="wrong"></p>
+ </div> 
+</div>
+ <p style=
+ "display:block;width:100%;font-family:'Palatino Linotype', 'Book Antiqua',Palatino,serif;color:#D4FFFF; text-align:center;position:absolute;bottom:0;"> 
+ Cdream team we are always together&nbsp;&nbsp;&nbsp;&nbsp;
+ @2013Cdream_writing by deng &nbsp;&nbsp;&nbsp;
+ email:zrimxjia@fu &nbsp;&nbsp;&nbsp;&nbsp;
+ </p>
+</body>
+</html>

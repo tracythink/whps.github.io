@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>倒计时</title>
+<style>
+body{background-image:url(../image/time_bg.jpg);}
+div p{display:inline-block;}
+h2{text-align:center; font-family:Verdana, Geneva, sans-serif; color:#FFF; margin:45px auto;}
+#go{width:100px; height:70px; cursor:pointer; width:80px; height:81px;  background-image:url(../image/go.PNG); text-align:center; font-size:36px; 
+margin:20px auto; border-radius:20px;}
+#body{width:692px; height:590px;  border:4px solid #3FF; margin:10px auto; border-radius:6px;}
+h1{text-align:center; font-family:Georgia, "Times New Roman", Times, serif; color:#600; margin-top:70px; margin-bottom:50px; font-weight:700; }
+form{ text-align:center;font-family:Verdana, Geneva, sans-serif; font-size:30px; color:#333;}
+input{width:100px; height:30px; border-radius:15px; font-size:30px;}
+#print{margin:10px auto;  text-align:center; margin-top:40px;}
+#print p{ font-size:36px; font-weight:900; color:#333;}
+#link{display:block; width:59px; float:right;height:57px;background-image:url(../image/home.PNG);border-radius:27px;transition-duration:0.5s,0.5s;
+margin:8px; clear:both; border:1px soild red;}
+#link:hover{-webkit-transform:rotate(360deg);}
+</style>
+<script>
+window.onload=function(){
+	var t=-1;
+	var gety=document.getElementById("input").getElementsByTagName("input")[0];
+	var getm=document.getElementById("input").getElementsByTagName("input")[1];
+	var getd=document.getElementById("input").getElementsByTagName("input")[2];
+	
+	//localStorage.setItem("d1","");
+	
+	gety.value = localStorage.getItem("y");
+	getd.value = localStorage.getItem("d");
+	getm.value = localStorage.getItem("m");
+	var getprint=document.getElementById("getvalue");
+	getprint.innerHTML = localStorage.getItem("d1");
+	var getgo= document.getElementById("go");
+	var printfd= document.getElementById("print").getElementsByTagName("p")[0];
+	var printfh= document.getElementById("print").getElementsByTagName("p")[1];
+	var printfm= document.getElementById("print").getElementsByTagName("p")[2];
+	var printfs= document.getElementById("print").getElementsByTagName("p")[3];
+	var nowtime=new Date();
+	var endtime= new Date();
+	var timer= null;
+	var temp = "";
+	
+	function savevar(){
+		localStorage.setItem("y",gety.value);
+	    localStorage.setItem("m",getm.value);
+	    localStorage.setItem("d",getd.value);
+	}
+	function addzero(num , n){
+		var str = ''+num;
+		while(str.length<n){
+			str='0'+str;
+		}
+		return str;
+	}
+	if(gety.value!="" && getm.value !="" && getd.value!=""){
+	updatetime();
+	timer2 = setInterval(updatetime,1000);
+	}
+	getgo.onclick = Oclick;
+	function Oclick(){
+		updatetime();
+		if(t>0){
+		timer = setInterval(updatetime,1000);
+		}
+	}
+	function updatetime(){
+		var nowtime=new Date();
+	    var endtime= new Date();
+		endtime.setFullYear(parseInt(gety.value),parseInt(getm.value-1),parseInt(getd.value));
+		endtime.setHours(0,0,0);
+		if(gety.value=="" || getm.value =="" || getd.value==""){
+			if(timer2){
+				clearInterval(timer2);
+			}
+			clearInterval(timer);
+			alert("请输入日期");
+			t = -1;
+		    return;
+		}
+		var remain= (endtime.getTime()- nowtime.getTime())/1000;
+		t=remain;
+		if(t<0){
+			clearInterval(timer);
+			alert("请输入比今天大的日期");
+			return;
+		}
+		else{
+		 bool = 1;
+		 temp=gety.value+"年"+getm.value+"月"+getd.value+"日";
+		 localStorage.setItem("d1",temp);
+		 localStorage.setItem("y",gety.value);
+	     localStorage.setItem("m",getm.value);
+	     localStorage.setItem("d",getd.value);
+		 getprint.innerHTML=localStorage.getItem("d1");
+		 var workd=parseInt(remain/86400);
+		 remain%=86400;
+		 var workh=parseInt(remain/3600);
+		 remain%=3600;
+		 var workm=parseInt(remain/60);
+		 var works=(remain%60);
+		// works-=2;
+		 printfd.innerHTML = addzero(workd,3)+" 天";
+		 printfh.innerHTML = addzero(workh,2)+" 时";
+		 printfm.innerHTML = addzero(workm,2)+" 分";
+		 printfs.innerHTML = addzero(works,2)+" 秒";
+		 //alert(""+workd+"-"+workh+"-"+workm+"-"+works);
+		}
+	}
+}
+</script>
+</head>
+
+<body>
+<div id="body">
+ <a href="First_page.html" id="link"></a> 
+ <div style="width:100px ; height:10px; "></div>
+ <h1>开始倒计时</h1>
+ <form id="input">
+  <label>请输入:</label>
+  <input  type="text" />
+  <label>年</label>
+  <input  type="text" />
+  <label>月</label>
+  <input  type="text" />
+  <label>日</label>
+ </form>
+ <h2>现在距离-<strong id="getvalue"></strong>-还剩:</h2>
+ <div id="go">
+  
+ </div>
+ <div  id="print">
+  <p>000 天</p>
+  <p>00 小时</p>
+  <p>00 分钟</p>
+  <p>00 秒</p> 
+ </div>
+</div>
+  <footer style="text-align:center;font-family:'Palatino Linotype', 'Book Antiqua',Palatino,serif;color:#D4FFFF;">
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  Cdream team we are always together&nbsp;&nbsp;&nbsp;&nbsp;
+  @2013Cdream_writing by deng &nbsp;&nbsp;&nbsp;
+  email:zrimxjia@fu &nbsp;&nbsp;&nbsp;&nbsp;
+  </footer>
+</body>
+</html>

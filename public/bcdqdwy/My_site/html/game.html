@@ -1,0 +1,306 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>game</title>
+<script>
+window.onload=function(){
+	var go=document.getElementById("gogogo");
+	go.onclick = function(){
+		document.getElementById("go").style.display = "none";
+		gamejson.init("div1");
+	}
+}
+var gamejson={
+	
+	oEnemy : {//怪兽数据
+	   e1 :{style:'enemy1',blood:1,speed:1 ,score:5},
+	   e2 :{style:'enemy2',blood:2,speed:3,score:25},
+	   e3 :{style:'enemy3',blood:3,speed:9,score:125}
+	},
+	gk : [//关卡数据
+		{
+			eMap : [
+			'e2','e2','e2','e2','e2','e2','e2','e2','e2','e2',
+			'e2','e2','e2','e2','e2','e2','e2','e2','e2','e2',
+			'e1','e1','e1','e1','e1','e1','e1','e1','e1','e1',
+			'e1','e1','e1','e1','e1','e1','e1','e1','e1','e1',
+			'e1','e1','e1','e1','e1','e1','e1','e1','e1','e1'
+			],
+			colNum : 10,
+			ispeedx:10,
+			ispeedy:10,
+			itime:2000
+		},
+		{
+			eMap : [
+			'e3','e3','e3','e3','e3','e3','e3','e3','e3','e3',
+			'e2','e2','e2','e2','e2','e2','e2','e2','e2','e2',
+			'e1','e1','e1','e1','e1','e1','e1','e1','e1','e1',
+			'e1','e1','e1','e1','e1','e1','e1','e1','e1','e1',
+			'e1','e1','e1','e1','e1','e1','e1','e1','e1','e1'
+			],
+			colNum : 10,
+			ispeedx:12,
+			ispeedy:12,
+			itime:1500
+		},
+	],
+	air : { //飞机数据
+		style : 'air',
+		bulletStyle : 'bullet'
+	},
+	init  : function(id){//初始化
+          this.oParent = document.getElementById(id);
+		   
+		  this.createScore();
+		  
+		  this.createEnemy(0);
+		  
+		  this.createAir();
+	},
+	createScore : function(){//积分创建
+		var oS = document.createElement('div');
+		oS.id = 'score';
+		oS.innerHTML= '积分: <span>0<spa>';
+		this.oParent.appendChild(oS);
+		this.oSnumber = oS.getElementsByTagName('span')[0];
+	},
+	createEnemy : function(inum){//敌人的创建
+      if(this.oul){
+		  clearInterval(this.oul.timer);
+		  this.oParent.removeChild(this.oul);
+	  }
+	  alert('第'+(inum+1)+'关');
+	  document.title= '第'+(inum+1)+'关';
+	  var gk = this.gk[inum];
+	  var arr = [];
+	  var oul = document.createElement('ul');
+	  oul.id = 'bee';
+	  oul.style.width = gk.colNum * 30+'px';
+	  this.oParent.appendChild(oul);
+	  this.oul = oul;
+	  //oul.style.margin = '10px auto';
+	  oul.style.left = (this.oParent.offsetWidth - oul.offsetWidth)/2+'px';
+	  for(var i=0;i<gk.eMap.length;i++){
+		  var oli = document.createElement('li');
+		  oli.blood = this.oEnemy[gk.eMap[i]].blood;
+		  oli.speed = this.oEnemy[gk.eMap[i]].speed;
+		  oli.score = this.oEnemy[gk.eMap[i]].score;
+		  oli.className = this.oEnemy[gk.eMap[i]].style;
+		  oul.appendChild(oli);
+	  }
+	  this.ali = oul.getElementsByTagName('li');
+	  
+	  for(var i=0;i<this.ali.length;i++){
+		  arr.push([this.ali[i].offsetLeft , this.ali[i].offsetTop]);
+	  }
+	  for(i=0;i<this.ali.length;i++){
+		  this.ali[i].style.position = 'absolute';
+		  this.ali[i].style.left = arr[i][0]+'px';
+		  this.ali[i].style.top = arr[i][1]+'px';
+	  }
+	  this.runEnemy(gk);
+	},
+	runEnemy : function(gk){//移动敌人
+	    var This = this;
+		var L = 0;
+		var R = this.oParent.offsetWidth - this.oul.offsetWidth;
+		this.oul.timer=setInterval(function(){
+			if(This.oul.offsetLeft > R){
+				gk.ispeedx *= -1;
+				This.oul.style.top = This.oul.offsetTop + gk.ispeedy +'px';
+			}
+			else if(This.oul.offsetLeft < L){
+				gk.ispeedx *= -1;
+				This.oul.style.top = This.oul.offsetTop + gk.ispeedy +'px'
+			}
+			This.oul.style.left = This.oul.offsetLeft + gk.ispeedx +'px';
+		},80);
+		setInterval(function(){
+			This.oneMove();
+			},gk.itime)
+	},
+	oneMove : function(){//单兵作战
+		var This = this;
+		var nowLi = this.ali[Math.floor(Math.random()*this.ali.length)];
+		nowLi.timer = setInterval(function(){
+             var a = (This.oAir.offsetLeft + This.oAir.offsetWidth/2)-(nowLi.offsetLeft + nowLi.parentNode.offsetLeft);
+			 var b = (This.oAir.offsetTop + This.oAir.offsetHeight/2)-(nowLi.offsetTop + nowLi.parentNode.offsetTop);
+			 var c= Math.sqrt( a*a+b*b);
+			 var isx = nowLi.speed * a/c;
+			 var isy = nowLi.speed * b/c;
+			 nowLi.style.left = nowLi.offsetLeft + isx+'px';
+			 nowLi.style.top = nowLi.offsetTop + isy+'px';
+			 
+			 if(This.pz(This.oAir,nowLi)){
+				 alert(" the end ");
+				 setTimeout(
+				 window.location.reload(),2000);
+			 }
+		},30)
+	},
+	createAir : function(){//飞机
+	    var hr = document.createElement('div');
+		hr.className = 'hr';
+		this.oParent.appendChild(hr);
+		
+		var oAir = document.createElement('div');
+		oAir.className = this.air.style;
+		this.oAir = oAir;
+		this.oParent.appendChild(oAir);
+		oAir.style.left = (this.oParent.offsetWidth - oAir.offsetWidth)/2+'px';
+		oAir.style.top = this.oParent.offsetHeight- oAir.offsetHeight+'px';
+		this.bindAir();
+	},
+	bindAir : function(){//操作飞机
+	   var timer = null;
+	   var inum = 0;
+	   var This = this;
+	   document.onkeydown = function(ev){
+		   var ev = ev || window.event;
+		   if(!timer){
+		    timer=setInterval(show,30);}
+		   if(ev.keyCode == 37){
+			   inum=1;
+		   }
+		   else if(ev.keyCode == 39){
+			   inum=2;
+		   }
+		   
+		  document .onkeyup = function(){
+			  clearInterval(timer);
+			  timer=null;
+			  inum= 0;
+			  if(ev.keyCode == 32){
+				  This.createBullet();
+			  }
+		  }
+		  function show(){
+			  if(inum == 1){
+				  This.oAir.style.left = This.oAir.offsetLeft-9+'px';
+			  }
+			  else if(inum==2){
+				  This.oAir.style.left = This.oAir.offsetLeft+9+'px';
+			  }
+		  }
+	   }
+	},
+	createBullet : function(){//子弹创建'
+	    var oB = document.createElement('div');
+		oB.className = this.air.bulletStyle;
+		this.oParent.appendChild(oB);
+		oB.style.left = this.oAir.offsetLeft -5+ this.oAir.offsetWidth/2+'px';
+		oB.style.top = this.oAir.offsetTop-24.5+'px';
+		this.runBullet(oB);
+	},
+	runBullet : function(oB){//子弹的运动
+	    var This = this;
+	    oB.timer=setInterval(function(){
+			 if(oB.offsetTop<-20){
+				clearInterval(oB.timer);
+				This.oParent.removeChild( oB ); 
+			 }
+			 else{
+			 oB.style.top = oB.offsetTop-15+'px';
+			 }
+			 for(var i=0;i<This.ali.length;i++){
+				 if( This.pz(oB,This.ali[i]) ){
+					  if(This.ali[i].blood == 1){
+						  clearInterval(This.ali[i].timer);
+						  
+						  This.oSnumber.innerHTML = parseInt(This.oSnumber.innerHTML)+ This.ali[i].score;
+						  This.oul.removeChild(This.ali[i]);
+					  }
+					  else{
+						  This.ali[i].blood--;
+					  }
+					  
+					  clearInterval(oB.timer);
+					  This.oParent.removeChild(oB);
+				 }
+			 }
+			 
+			 if(!This.ali.length){
+				 This.createEnemy(1);
+			 }
+		},30);
+	},
+	pz : function(obj1,obj2){//碰撞检测
+	    var l1 = obj1.offsetLeft;
+		var R1 = obj1.offsetLeft + obj1.offsetWidth;
+		var T1 = obj1.offsetTop;
+		var B1 = obj1.offsetTop+obj1.offsetHeight;
+		
+		var l2 = obj2.offsetLeft+obj2.parentNode.offsetletLeft;
+		var R2 = obj2.offsetLeft + obj2.offsetWidth+obj2.parentNode.offsetLeft;
+		var T2 = obj2.offsetTop+obj2.parentNode.offsetTop;
+		var B2 = obj2.offsetTop+obj2.offsetHeight+obj2.parentNode.offsetTop;
+		if(R1<l2 || l1>R2 || B1<T2 || T1>B2){
+			return false;
+		}
+    	else{
+			return true;
+		}
+	}
+}
+</script>
+<style>
+*{margin:0px;
+padding:0px;}
+.hr{width:898px; background-color:red;position:absolute;top:592px; height:1px;}
+li{list-style:none;}
+.enemy1{float:left;width:30px;height:30px; background:url(../image/gs1.PNG) no-repeat;position:relative;border-radius:10px;}
+.enemy2{float:left;position:relative;width:30px;height:30px; background:url(../image/gs2.PNG) no-repeat;border-radius:10px;}
+.enemy3{float:left;position:relative;width:30px;height:30px; background:url(../image/gs3.PNG) no-repeat; border-radius:10px;}
+#div1{background:url(../image/gamebg.jpg);width:900px; height:640px;margin:0px auto; position:relative;}
+#bee{position:relative;}
+#score{color:#CCC; padding:6px; font-size:18px; font-weight:700; font-family:Verdana, Geneva, sans-serif;}
+#go{width:500px; height:530px;  color:#0FF; text-align:center; margin:0px auto;padding:10px 0; font-family:Georgia, "Times New Roman", Times, serif; font-weight:700; }
+#go p{ margin:50px auto; width:150px;border:1px solid #0FF; padding:5px; border-radius:5px;cursor:pointer; font-size:30px; margin-bottom:50px; margin-top:99px;}
+#go p:hover{color:red ; border-color:#F00;background-color:#000;}
+.air{width:59px; height:40px; background:url(../image/fj.PNG) no-repeat; bottom:0; border-radius:50px; border:3px solid #CC0; position:absolute;}
+.bullet{width:9px; overflow:hidden; height:20px; position:absolute; background:url(../image/zd.PNG); border:1px solid red; border-radius:5px;}
+bgsound {src:url(../other/Akiko%20-%20I%20Miss%20You.mp3); loop:-1;}
+#title{width:300px;margin:90px auto; font-size:45px;}
+#go h6{float:left; margin-left:10px; font-size:24px; margin-top:8px;}
+img{ margin-left:25px;float:left; border-radius:10px;margin-top:5px;}
+#link{display:block; width:59px; float:right;height:57px;background-image:url(../image/home.PNG);border-radius:27px;transition-duration:0.5s,0.5s;
+margin:8px; clear:both;}
+#link:hover{-webkit-transform:rotate(360deg); }
+
+#foot{font-family:'Palatino Linotype', 'Book Antiqua',Palatino,serif; color:#D4FFFF; font-size:9px;position:fixed; left:405px; top:620px;}
+</style>
+</head>
+
+<body>
+ 
+ <div id="div1">
+  <div id="go">
+    <a href="First_page.html" id="link"></a> 
+    <h1 id="title">打怪游戏!!!
+    </h1>
+    <p id="gogogo">开始游戏</p>
+    
+    <div style="height:50px;border:1px solid #999; border-radius:10px;width:250px; margin:10px auto;">
+    <img src="../image/gs1.PNG" /><h6>这货打ta一下</h6>
+    <div>
+    <div style="height:50px;border:1px solid #999;width:250px; border-radius:10px;margin:50px auto;">
+    <img src="../image/gs2.PNG" /><h6>这货打ta两下</h6>
+    <div>
+    <div style="height:50px;border:1px solid #999;width:250px;border-radius:10px; margin:50px auto;">
+    <img src="../image/gs3.PNG" /><h6>这货打ta三下</h6>
+    
+    <div>
+  </div>
+    
+ </div>
+    <div id="foot">
+     Cdream team we are always together&nbsp;&nbsp;&nbsp;&nbsp;
+     @2013Cdream_writing by deng &nbsp;&nbsp;&nbsp;
+     email:zrimxjia@fu &nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+ 
+ 
+</body>
+</html>
