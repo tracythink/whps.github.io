@@ -1,3 +1,0 @@
-﻿EMAIL = '???'
-PASSWARD = '???'
-HOSTID = 'YOUR RENREN UNIQUE_ID'
